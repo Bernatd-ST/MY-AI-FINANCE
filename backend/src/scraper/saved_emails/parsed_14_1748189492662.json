@@ -1,0 +1,128 @@
+{
+  "attachments": [],
+  "headers": {},
+  "headerLines": [
+    {
+      "key": "delivered-to",
+      "line": "Delivered-To: bernatdsitumeang077@gmail.com"
+    },
+    {
+      "key": "received",
+      "line": "Received: by 2002:a05:7300:e12f:b0:172:3dc2:f9d0 with SMTP id hd47csp241156dyb;\r\n        Fri, 23 May 2025 22:37:05 -0700 (PDT)"
+    },
+    {
+      "key": "x-received",
+      "line": "X-Received: by 2002:a17:906:459d:b0:ad2:292d:6ba3 with SMTP id a640c23a62f3a-ad85b15950dmr38321566b.7.1748065025480;\r\n        Fri, 23 May 2025 22:37:05 -0700 (PDT)"
+    },
+    {
+      "key": "arc-seal",
+      "line": "ARC-Seal: i=1; a=rsa-sha256; t=1748065025; cv=none;\r\n        d=google.com; s=arc-20240605;\r\n        b=GWxlfpZZrpVjd3JG4WR7MgU8So8UlFV37IXhOZgk5KI8B0KmrejreKLEYlBv8kkRiu\r\n         z6bNPybFwMgf6QybOhzKO1x9EV6uJDgj9WkCQUqKuZ1OqV2pVhuZXhsEaqMKll0jgxGU\r\n         CCQg+QLmlqv02nulHxNUWmbjILLv0l1hRRkXFiG7MacFVfdTEzxkROc29hNQVL5zFnH6\r\n         3GwFl39rv/Apf+MqDxTIzvm6guyK2RHQegZVWL9XhEp3H/HhmcEXz0/Hl5An/QAgIm4l\r\n         NNBYzoAcK1UR48S3X626bntKEofe9OKT2glwHvHVkweTeE77yAVdAaO6Y3s+UC/VJwh4\r\n         C+GA=="
+    },
+    {
+      "key": "arc-message-signature",
+      "line": "ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;\r\n        h=to:subject:message-id:date:from:mime-version:dkim-signature;\r\n        bh=80r6DULCFMTJ45t2PmR8FtoE62M+9tJQAu2v/Uq2Pb4=;\r\n        fh=IlZIoqWdUvKyK4AClkXBlX+WRlTLJi8OEzCeedV5Y/M=;\r\n        b=fjwKrckn1fbLWAIi5ZGPPLv+nrZNjFP7ynTXuBOn511qqYGcSJ2Sw7bA5nFcsjH623\r\n         lwCxhAB6MGQwvF3mJWFTq+7IjDlktTmBwkguywRa/V8z3wVzhZuaqE5khGb3DCtxKgEP\r\n         sf11gY85PcQVSKySDJIT9bmH5RpwtB+i4pUtPkLYLAMa/c/f/CxOii2xCYRMwB5ii2cx\r\n         0Z3F5CHGbx4fIau3E4jN0hWQBU+0RUJxMoSAkPXKswIoTPRUIi6Gk+NjxpjG7Y4Z4hqL\r\n         dUrFoMbCh1C5wNXORH46k5Q5N5rk1DPbGS8dhGxlvnIUCDYXDiOIY90RWERzLhTeMN7e\r\n         do3Q==;\r\n        dara=google.com"
+    },
+    {
+      "key": "arc-authentication-results",
+      "line": "ARC-Authentication-Results: i=1; mx.google.com;\r\n       dkim=pass header.i=@gmail.com header.s=20230601 header.b=W6bRJQXd;\r\n       spf=pass (google.com: domain of bernadbernadajja@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=bernadbernadajja@gmail.com;\r\n       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;\r\n       dara=pass header.i=@gmail.com"
+    },
+    {
+      "key": "return-path",
+      "line": "Return-Path: <bernadbernadajja@gmail.com>"
+    },
+    {
+      "key": "received",
+      "line": "Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])\r\n        by mx.google.com with SMTPS id a640c23a62f3a-ad52d3af6f6sor850172266b.12.2025.05.23.22.37.05\r\n        for <bernatdsitumeang077@gmail.com>\r\n        (Google Transport Security);\r\n        Fri, 23 May 2025 22:37:05 -0700 (PDT)"
+    },
+    {
+      "key": "received-spf",
+      "line": "Received-SPF: pass (google.com: domain of bernadbernadajja@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;"
+    },
+    {
+      "key": "authentication-results",
+      "line": "Authentication-Results: mx.google.com;\r\n       dkim=pass header.i=@gmail.com header.s=20230601 header.b=W6bRJQXd;\r\n       spf=pass (google.com: domain of bernadbernadajja@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=bernadbernadajja@gmail.com;\r\n       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;\r\n       dara=pass header.i=@gmail.com"
+    },
+    {
+      "key": "dkim-signature",
+      "line": "DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=gmail.com; s=20230601; t=1748065025; x=1748669825; dara=google.com;\r\n        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject\r\n         :date:message-id:reply-to;\r\n        bh=80r6DULCFMTJ45t2PmR8FtoE62M+9tJQAu2v/Uq2Pb4=;\r\n        b=W6bRJQXdB4/yw5b27vbXXa0mqNBvPCZssQ58ge4UniBbFBD0bQGS2zNiBegfzY0F43\r\n         IRKlbTFd0rcDA1TqHjvsRn8JckRr9MjCKw1y4bQH2vPGQiFTmi/ucrUm8mYr5HRBog9G\r\n         g23OpG5EYzt9kJZ8z7MyUbqeBWAQEQdyW9hg9D9s0P96e8KQb8Ib5J/P4q7tx7IHtu4T\r\n         CmRa45GkeXXgXjnCnk7G9ovhLEr1zhEw3Xi4NXjtQMoMaR58uAkr4dzWCduQq8yCwRBU\r\n         hfYK4jX9Dna/MboqErLic2uSMLwfxGJ61vRBqIq24Lz+rNyHG5c3hLOSAUzYT2mBYVIb\r\n         SfFA=="
+    },
+    {
+      "key": "x-google-dkim-signature",
+      "line": "X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=1e100.net; s=20230601; t=1748065025; x=1748669825;\r\n        h=to:subject:message-id:date:from:mime-version:x-gm-message-state\r\n         :from:to:cc:subject:date:message-id:reply-to;\r\n        bh=80r6DULCFMTJ45t2PmR8FtoE62M+9tJQAu2v/Uq2Pb4=;\r\n        b=vpipTCCJeNzTJwXKCB0eEEQBFL5CpPM86BHpY4aqu8NfZhxTPPb/5SxsbN9qbZ4BZ0\r\n         P4/imRo7ycxUBVatKHVe7tzubll8NWhYQpr4cBU7iF7Q+RCeMXcDMojwnvxCGn6pC2qm\r\n         GfF9BPtwx+z4TGWDvJ2ab/+X+HLE1sJRQgL01EAGtcqd2Wb81G8DDWG1eUtYgIF2NLQG\r\n         tVY54hvkPs1pml4OAxt6RJF1q3TIMXZF9BWRKBAWzYoeK8Sj2tmb1rLa6knMXmrtxhUG\r\n         PyWTRiZwAnu0LeFwOgRSKS6JgpquMRyvgdeZETK4aFME2K5ymeejDS+giTnwa0LP2qbQ\r\n         FP2g=="
+    },
+    {
+      "key": "x-gm-message-state",
+      "line": "X-Gm-Message-State: AOJu0Yz4iWcQUfMZlap0nCHiLW9Bumn29lXlICcbHONieZucE1Ngh1J1\r\n\thYtO0S5pzkKdQsrv6BzS+aXMWcmsKWv1cKz0webgETjtzg3EQ/wDpmS3YMoPOUAxVZts6dz/D/9\r\n\tDqw5MNzdnzfuZZh6aO39kyC4a92dZrfVNtw=="
+    },
+    {
+      "key": "x-gm-gg",
+      "line": "X-Gm-Gg: ASbGncvuaCL46KIi2P9BcAIMuH8NmDsErtiV8J1d14M1Dkt/3fD1+8qx/zHu4waUQOV\r\n\thNpym08yB20oS5h0mJjiHDI5ChmrgM0tph5w9L072sPk2bRvxVTqxc333F9F+6uK9hpcrJqMUnE\r\n\tsRsCqddem3jBdwJ+DRK478sRqsND26s/3G"
+    },
+    {
+      "key": "x-google-smtp-source",
+      "line": "X-Google-Smtp-Source: AGHT+IHK3XCMhcvTX+2tZ8rwj1GD18xo4mjuBE3LkmNXag94o7xQ+FxOfx0OIwGPvBV8wyYbsQls28Gaxl1nWOHs4Qw="
+    },
+    {
+      "key": "x-received",
+      "line": "X-Received: by 2002:a17:906:dc8a:b0:ad2:28be:9a16 with SMTP id\r\n a640c23a62f3a-ad85b329c4bmr135949566b.51.1748065024481; Fri, 23 May 2025\r\n 22:37:04 -0700 (PDT)"
+    },
+    {
+      "key": "mime-version",
+      "line": "MIME-Version: 1.0"
+    },
+    {
+      "key": "from",
+      "line": "From: Bernad Bernadajja <bernadbernadajja@gmail.com>"
+    },
+    {
+      "key": "date",
+      "line": "Date: Sat, 24 May 2025 12:36:53 +0700"
+    },
+    {
+      "key": "x-gm-features",
+      "line": "X-Gm-Features: AX0GCFvB1aWDeJXLoV0YDAzgZiw65axsA_ilSnMGZo82F7BYX5tOTrKHTIkkibs"
+    },
+    {
+      "key": "message-id",
+      "line": "Message-ID: <CABxNLWLxSCYkc=gJ6jCB2SmOvX6PJN09Q5Hc-xezYr8vLqVhZw@mail.gmail.com>"
+    },
+    {
+      "key": "subject",
+      "line": "Subject: QRIS"
+    },
+    {
+      "key": "to",
+      "line": "To: \"bernatdsitumeang077@gmail.com\" <bernatdsitumeang077@gmail.com>"
+    },
+    {
+      "key": "content-type",
+      "line": "Content-Type: multipart/alternative; boundary=\"000000000000d420580635db1af0\""
+    }
+  ],
+  "html": "<div dir=\"auto\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"padding:0px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top;font-size:12.8px;background-color:rgb(255,255,255);font-family:arial,helvetica,sans-serif;color:rgb(97,90,90)\"><tbody style=\"padding:0px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top\"><tr style=\"padding:0px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top\"><td width=\"35%\" style=\"padding:12px 16px 12px 24px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top\">Tanggal</td><td width=\"65%\" style=\"padding:12px 24px 12px 16px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top\">23 Mei 2025</td></tr><tr style=\"padding:0px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top\"><td colspan=\"2\" style=\"padding:0px 24px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top\"><p style=\"margin:0px;padding:0px;line-height:0;border-bottom:1px solid rgb(247,246,246)\"> </p></td></tr><tr style=\"padding:0px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top\"><td style=\"padding:12px 16px 12px 24px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:middle\">Jam</td><td style=\"padding:12px 24px 12px 16px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:middle\">13:27:11 WIB</td></tr><tr style=\"padding:0px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top\"><td colspan=\"2\" style=\"padding:0px 24px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top\"><p style=\"margin:0px;padding:0px;line-height:0;border-bottom:1px solid rgb(247,246,246)\"> </p></td></tr><tr style=\"padding:0px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top\"><td style=\"padding:12px 16px 12px 24px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:middle\">Nominal Transaksi</td><td style=\"padding:12px 24px 12px 16px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:middle\">Rp 18.000,00</td></tr><tr style=\"padding:0px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top\"><td colspan=\"2\" style=\"padding:0px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top;line-height:0\"> </td></tr><tr style=\"padding:0px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top\"><td colspan=\"2\" style=\"padding:0px 24px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top\"><p style=\"margin:0px;padding:0px;line-height:0;border-bottom:1px solid rgb(247,246,246)\"> </p></td></tr><tr style=\"padding:0px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top\"><td style=\"padding:12px 16px 12px 24px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:middle\">No. Referensi</td><td style=\"padding:12px 24px 12px 16px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:middle\">2505231121504091957</td></tr><tr style=\"padding:0px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top\"><td colspan=\"2\" style=\"padding:0px 24px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top\"><p style=\"margin:0px;padding:0px;line-height:0;border-bottom:1px solid rgb(247,246,246)\"> </p></td></tr><tr style=\"padding:0px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top\"><td style=\"padding:12px 16px 12px 24px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:middle\">No. Referensi QRIS</td><td style=\"padding:12px 24px 12px 16px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:middle\">505630629513</td></tr><tr style=\"padding:0px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top\"><td style=\"padding:12px 16px 12px 24px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:middle\">Merchant PAN</td><td style=\"padding:12px 24px 12px 16px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:middle\">9360091439013651285</td></tr><tr style=\"padding:0px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top\"><td colspan=\"2\" style=\"padding:0px 24px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top\"><p style=\"margin:0px;padding:0px;line-height:0;border-bottom:1px solid rgb(247,246,246)\"> </p></td></tr><tr style=\"padding:0px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top\"><td style=\"padding:12px 16px 12px 24px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:middle\">Customer PAN</td><td style=\"padding:12px 24px 12px 16px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:middle\">9360000812208865391</td></tr><tr style=\"padding:0px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top\"><td colspan=\"2\" style=\"padding:0px 24px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top\"><p style=\"margin:0px;padding:0px;line-height:0;border-bottom:1px solid rgb(247,246,246)\"> </p></td></tr><tr style=\"padding:0px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top\"><td style=\"padding:12px 16px 12px 24px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:middle\">Pengakuisisi</td><td style=\"padding:12px 24px 12px 16px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:middle\">GoPay</td></tr><tr style=\"padding:0px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top\"><td colspan=\"2\" style=\"padding:0px 24px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top\"><p style=\"margin:0px;padding:0px;line-height:0;border-bottom:1px solid rgb(247,246,246)\"> </p></td></tr><tr style=\"padding:0px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:top\"><td style=\"padding:12px 16px 12px 24px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:middle\">Terminal ID</td><td style=\"padding:12px 24px 12px 16px;margin:0px;border:none;border-spacing:0px;border-collapse:collapse;vertical-align:middle\">A01</td></tr></tbody></table></div>\n",
+  "text": "Tanggal 23 Mei 2025\n\n\nJam 13:27:11 WIB\n\n\nNominal Transaksi Rp 18.000,00\n\n\n\nNo. Referensi 2505231121504091957\n\n\nNo. Referensi QRIS 505630629513\nMerchant PAN 9360091439013651285\n\n\nCustomer PAN 9360000812208865391\n\n\nPengakuisisi GoPay\n\n\nTerminal ID A01\n",
+  "textAsHtml": "<p>Tanggal 23 Mei 2025</p><p>Jam 13:27:11 WIB</p><p>Nominal Transaksi Rp 18.000,00</p><p>No. Referensi 2505231121504091957</p><p>No. Referensi QRIS 505630629513<br/>Merchant PAN 9360091439013651285</p><p>Customer PAN 9360000812208865391</p><p>Pengakuisisi GoPay</p><p>Terminal ID A01</p>",
+  "subject": "QRIS",
+  "date": "2025-05-24T05:36:53.000Z",
+  "to": {
+    "value": [
+      {
+        "address": "bernatdsitumeang077@gmail.com",
+        "name": ""
+      }
+    ],
+    "html": "<span class=\"mp_address_group\"><a href=\"mailto:bernatdsitumeang077@gmail.com\" class=\"mp_address_email\">bernatdsitumeang077@gmail.com</a></span>",
+    "text": "bernatdsitumeang077@gmail.com"
+  },
+  "from": {
+    "value": [
+      {
+        "address": "bernadbernadajja@gmail.com",
+        "name": "Bernad Bernadajja"
+      }
+    ],
+    "html": "<span class=\"mp_address_group\"><span class=\"mp_address_name\">Bernad Bernadajja</span> &lt;<a href=\"mailto:bernadbernadajja@gmail.com\" class=\"mp_address_email\">bernadbernadajja@gmail.com</a>&gt;</span>",
+    "text": "\"Bernad Bernadajja\" <bernadbernadajja@gmail.com>"
+  },
+  "messageId": "<CABxNLWLxSCYkc=gJ6jCB2SmOvX6PJN09Q5Hc-xezYr8vLqVhZw@mail.gmail.com>"
+}

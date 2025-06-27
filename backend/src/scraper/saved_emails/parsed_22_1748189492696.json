@@ -1,0 +1,136 @@
+{
+  "attachments": [],
+  "headers": {},
+  "headerLines": [
+    {
+      "key": "delivered-to",
+      "line": "Delivered-To: bernatdsitumeang077@gmail.com"
+    },
+    {
+      "key": "received",
+      "line": "Received: by 2002:a05:7300:e12f:b0:172:3dc2:f9d0 with SMTP id hd47csp905411dyb;\r\n        Sun, 25 May 2025 08:03:25 -0700 (PDT)"
+    },
+    {
+      "key": "x-received",
+      "line": "X-Received: by 2002:a05:6e02:3086:b0:3dc:868e:dadb with SMTP id e9e14a558f8ab-3dc9b77405cmr13784215ab.7.1748185404828;\r\n        Sun, 25 May 2025 08:03:24 -0700 (PDT)"
+    },
+    {
+      "key": "arc-seal",
+      "line": "ARC-Seal: i=1; a=rsa-sha256; t=1748185404; cv=none;\r\n        d=google.com; s=arc-20240605;\r\n        b=Gy69NCSKPxwB7fvR7cwkX20BIjISTWfKHMf4zaZUr3BgI0CJlu5gdHtI3BEGBwD9Hw\r\n         OWob/Sc1nf0BstKpueCpLBS6zHi0mqJWWUr8yjTx6R/mgZPZjWsDxbGSD5WIQobFQlZQ\r\n         +nL+Yl54XJ9o/WUB0iLxshE51IqU39gd0FFn6/yJXlc/Yplsj3U83C4WjstfyYJkKmyN\r\n         bHeEB69sou7oL+gTl2DLnzfF98k3EJWoV0+GagI9p0BWD05dXaTqzXKRz7+OM9eLAWu9\r\n         OHeLO9pB+r+HWHQGtDxtjc/0mibJx5FkZ6dLD32q/MUUsXSqcc8WcoqM8mj5aUqO7OXV\r\n         aSUw=="
+    },
+    {
+      "key": "arc-message-signature",
+      "line": "ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;\r\n        h=to:from:subject:message-id:feedback-id:date:mime-version\r\n         :dkim-signature;\r\n        bh=Dde14pbjrJHcdGmZ97+rxOZfojdqaui5boVibSZ3ZvM=;\r\n        fh=MVIl3rZrW5Hn8Fq7phsUPwkyNNNlUXqOzqGLMWrnTko=;\r\n        b=Awu/XbpGHleuQZUoX/5z2cm9VatBptMmhlrxq0/F543r32x8QXBFO8m9hFZC4obbS8\r\n         JSIS5mBqw1RSkSZFzN/u4h0K+ARpZShP018fYywLhEnAbdfD8cootLmy2aBxwl2A6Zit\r\n         Rd8eQv/7JgwEdf9CpooBtkg701deU+erUVW+I3Vm5za3Cg6DvOBjk0pni/vMpMb0+3aw\r\n         /rUlKQGiihQfllTqWxrdwlJmlSonaFCq5U5c0yjs+aVSkKGPMt2jE+Mg26UOKb7ge77J\r\n         imXn0HzGRVgFzviesnBSULl3i3BoBAs3U99b2V4DNuJ/N9G/mybwmSOY6A8UiISNFWUG\r\n         1Pnw==;\r\n        dara=google.com"
+    },
+    {
+      "key": "arc-authentication-results",
+      "line": "ARC-Authentication-Results: i=1; mx.google.com;\r\n       dkim=pass header.i=@accounts.google.com header.s=20230601 header.b=FVugvESQ;\r\n       spf=pass (google.com: domain of 3ozezaagtalifg-jwhdqsuugmflk.yggydw.uge@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3OzEzaAgTALIfg-jWhdqSUUgmflk.YggYdW.Uge@gaia.bounces.google.com;\r\n       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com;\r\n       dara=pass header.i=@gmail.com"
+    },
+    {
+      "key": "return-path",
+      "line": "Return-Path: <3OzEzaAgTALIfg-jWhdqSUUgmflk.YggYdW.Uge@gaia.bounces.google.com>"
+    },
+    {
+      "key": "received",
+      "line": "Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73])\r\n        by mx.google.com with SMTPS id 8926c6da1cb9f-4fbcc39debbsor2856619173.2.2025.05.25.08.03.23\r\n        for <bernatdsitumeang077@gmail.com>\r\n        (Google Transport Security);\r\n        Sun, 25 May 2025 08:03:24 -0700 (PDT)"
+    },
+    {
+      "key": "received-spf",
+      "line": "Received-SPF: pass (google.com: domain of 3ozezaagtalifg-jwhdqsuugmflk.yggydw.uge@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) client-ip=209.85.220.73;"
+    },
+    {
+      "key": "authentication-results",
+      "line": "Authentication-Results: mx.google.com;\r\n       dkim=pass header.i=@accounts.google.com header.s=20230601 header.b=FVugvESQ;\r\n       spf=pass (google.com: domain of 3ozezaagtalifg-jwhdqsuugmflk.yggydw.uge@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3OzEzaAgTALIfg-jWhdqSUUgmflk.YggYdW.Uge@gaia.bounces.google.com;\r\n       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com;\r\n       dara=pass header.i=@gmail.com"
+    },
+    {
+      "key": "dkim-signature",
+      "line": "DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=accounts.google.com; s=20230601; t=1748185403; x=1748790203; dara=google.com;\r\n        h=to:from:subject:message-id:feedback-id:date:mime-version:from:to:cc\r\n         :subject:date:message-id:reply-to;\r\n        bh=Dde14pbjrJHcdGmZ97+rxOZfojdqaui5boVibSZ3ZvM=;\r\n        b=FVugvESQaZDzotLM2OdqKCGK5AXvt0jP9uChsqAQNioeNufv9WmRppwu8ncY+jrN6f\r\n         /O5AkjkaofQ+w9/luApHdhJjkZON5HtlgBDVNlWhjK83CAzj1rxByyHK18u9AaFC5+VP\r\n         58khubKJLtdyJ+jGdBG1OgkumHAneLgS8JI4jKS1R7WOtTohF9hfpgMYc33tXfBnwnhF\r\n         lMSkp9ZIfP798dXvbF3X3S5xW/bAzfBuHaw05OR0g1cmCaxjWSqoPSPnh3vtwR6Sb8Bj\r\n         EqrY7BXbA6JCBEzQJ2bqLh0oXwXdeIxcQV2SC1THBs1eDmXaigdguczs79SxuYIltIcs\r\n         rjHw=="
+    },
+    {
+      "key": "x-google-dkim-signature",
+      "line": "X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=1e100.net; s=20230601; t=1748185403; x=1748790203;\r\n        h=to:from:subject:message-id:feedback-id:date:mime-version\r\n         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;\r\n        bh=Dde14pbjrJHcdGmZ97+rxOZfojdqaui5boVibSZ3ZvM=;\r\n        b=Z19/RjD4CEAkG7nQsL8KRzzRhN/xy7ctzvN/ejeTvJwqYbmNU+tJ8dj2EnEDf43nLV\r\n         RqEfK5ViATXogowBHhUBgT+lcd8+O4OHWSFOCi4ZPz3JCGiibcvAacB3dx7ALM/59rAu\r\n         0vmK+6FegX6h6/c8nQOMM5aTy7BJq3DZ0SC22i+1YpVLrMBcHJVO/MaksZFjWKlc8qjs\r\n         A9hw7X3IK4sTmaQSOgPzZnyAyvEWz68l/ROldtdCNw9baOF5v6r3yG8R4bFwVevDbh+A\r\n         5dyyJNrV69Vy/UeEnsOGVA9a8ftTS/rM+BRNLE+2BzO5iUt79Z5JTZhkfSSrZRoAjoyk\r\n         i3zQ=="
+    },
+    {
+      "key": "x-gm-message-state",
+      "line": "X-Gm-Message-State: AOJu0YxPlGp6fQTsRTu0ws6yXQrJf08waIDETQsbyPMEyOJRn9YH+VA5\r\n\tCxFIQvFb3wywUY3Z+n/ZlcGmCli9JESOXPxRoA29JtI752fH3RMY48i0SaBM8pPcbTIsP/KnSGV\r\n\tQ6vkfFEzZb2T0s3aAwjloGEMVEPm4+pdKJDIgZR0="
+    },
+    {
+      "key": "x-google-smtp-source",
+      "line": "X-Google-Smtp-Source: AGHT+IGKVOPO8WvYPhsB0ljKfhBGoPPehGdCmNZa6PuHPsjXykSSlTARtr93km5kgLllkK5nmxMOS2cLUXF1GxBEV6wDUg=="
+    },
+    {
+      "key": "mime-version",
+      "line": "MIME-Version: 1.0"
+    },
+    {
+      "key": "x-received",
+      "line": "X-Received: by 2002:a05:6602:2c0d:b0:85a:e406:5836 with SMTP id\r\n ca18e2360f4ac-86cbb8f7c9emr158251739f.5.1748185403203; Sun, 25 May 2025\r\n 08:03:23 -0700 (PDT)"
+    },
+    {
+      "key": "date",
+      "line": "Date: Sun, 25 May 2025 15:03:22 GMT"
+    },
+    {
+      "key": "x-account-notification-type",
+      "line": "X-Account-Notification-Type: 269"
+    },
+    {
+      "key": "feedback-id",
+      "line": "Feedback-ID: 269:account-notifier"
+    },
+    {
+      "key": "x-notifications",
+      "line": "X-Notifications: 7a9c427d47aa0000"
+    },
+    {
+      "key": "x-notifications-bounce-info",
+      "line": "X-Notifications-Bounce-Info: AXXYx-J-LhKkpmutZxBU2rW_zwN8WDqacI09mD6kITTPzLadxgB-WJ9aK0CR_2_sy75FiOZRkq8SJx1Rx0NP73BPBh9dDc323RzS9ZR9uKvrHdEBQWGydcP6L_0M5IoG04N4Bi74U5OdIY0cY4aTDTuaxoElhFLfom6GkkZaBV8RJJmT8uhoeWddTiDOcOYeQeT4y5owf6Q9SiyWhPrEQIQMfxxb_ANjAwNjA0MDQxNTM1NTk2OTMzMg"
+    },
+    {
+      "key": "message-id",
+      "line": "Message-ID: <COP8AoU5NqsUK54YNVia5Q@notifications.google.com>"
+    },
+    {
+      "key": "subject",
+      "line": "Subject: Notifikasi keamanan"
+    },
+    {
+      "key": "from",
+      "line": "From: Google <no-reply@accounts.google.com>"
+    },
+    {
+      "key": "to",
+      "line": "To: bernatdsitumeang077@gmail.com"
+    },
+    {
+      "key": "content-type",
+      "line": "Content-Type: multipart/alternative; boundary=\"000000000000f5a01a0635f721d1\""
+    }
+  ],
+  "html": "<!DOCTYPE html><html lang=\"en\"><head><meta name=\"format-detection\" content=\"email=no\"/><meta name=\"format-detection\" content=\"date=no\"/><style nonce=\"TVfHvF3L_6zma30WbPKTeQ\">.awl a {color: #FFFFFF; text-decoration: none;} .abml a {color: #000000; font-family: Roboto-Medium,Helvetica,Arial,sans-serif; font-weight: bold; text-decoration: none;} .adgl a {color: rgba(0, 0, 0, 0.87); text-decoration: none;} .afal a {color: #b0b0b0; text-decoration: none;} @media screen and (min-width: 600px) {.v2sp {padding: 6px 30px 0px;} .v2rsp {padding: 0px 10px;}} @media screen and (min-width: 600px) {.mdv2rw {padding: 40px 40px;}} </style><link href=\"//fonts.googleapis.com/css?family=Google+Sans\" rel=\"stylesheet\" type=\"text/css\" nonce=\"TVfHvF3L_6zma30WbPKTeQ\"/></head><body style=\"margin: 0; padding: 0;\" bgcolor=\"#FFFFFF\"><table width=\"100%\" height=\"100%\" style=\"min-width: 348px;\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" lang=\"en\"><tr height=\"32\" style=\"height: 32px;\"><td></td></tr><tr align=\"center\"><td><div itemscope itemtype=\"//schema.org/EmailMessage\"><div itemprop=\"action\" itemscope itemtype=\"//schema.org/ViewAction\"><link itemprop=\"url\" href=\"https://accounts.google.com/AccountChooser?Email=bernatdsitumeang077@gmail.com&amp;continue=https://myaccount.google.com/alert/nt/1748185402931?rfn%3D269%26rfnc%3D1%26eid%3D-1950396552840029940%26et%3D0\"/><meta itemprop=\"name\" content=\"Tinjau Aktivitas\"/></div></div><table border=\"0\" cellspacing=\"0\" cellpadding=\"0\" style=\"padding-bottom: 20px; max-width: 516px; min-width: 220px;\"><tr><td width=\"8\" style=\"width: 8px;\"></td><td><div style=\"border-style: solid; border-width: thin; border-color:#dadce0; border-radius: 8px; padding: 40px 20px;\" align=\"center\" class=\"mdv2rw\"><img src=\"https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_74x24dp.png\" width=\"74\" height=\"24\" aria-hidden=\"true\" style=\"margin-bottom: 16px;\" alt=\"Google\"><div style=\"font-family: &#39;Google Sans&#39;,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;border-bottom: thin solid #dadce0; color: rgba(0,0,0,0.87); line-height: 32px; padding-bottom: 24px;text-align: center; word-break: break-word;\"><div style=\"font-size: 24px;\">Sandi aplikasi yang digunakan untuk login telah dihapus </div><table align=\"center\" style=\"margin-top:8px;\"><tr style=\"line-height: normal;\"><td align=\"right\" style=\"padding-right:8px;\"><img width=\"20\" height=\"20\" style=\"width: 20px; height: 20px; vertical-align: sub; border-radius: 50%;;\" src=\"https://lh3.googleusercontent.com/a/ACg8ocJvAaOHSKkB4M6Z8LZvHXX-j-OtBIkl-ICB05cenZ8PGJxUUQ=s96-c\" alt=\"\"></td><td><a style=\"font-family: &#39;Google Sans&#39;,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;color: rgba(0,0,0,0.87); font-size: 14px; line-height: 20px;\">bernatdsitumeang077@gmail.com</a></td></tr></table> </div><div style=\"font-family: Roboto-Regular,Helvetica,Arial,sans-serif; font-size: 14px; color: rgba(0,0,0,0.87); line-height: 20px;padding-top: 20px; text-align: left;\">Jika bukan Anda yang menghapus sandi ini, mungkin akun Anda digunakan orang lain. Periksa dan amankan akun Anda sekarang.<div style=\"padding-top: 32px; text-align: center;\"><a href=\"https://accounts.google.com/AccountChooser?Email=bernatdsitumeang077@gmail.com&amp;continue=https://myaccount.google.com/alert/nt/1748185402931?rfn%3D269%26rfnc%3D1%26eid%3D-1950396552840029940%26et%3D0\" target=\"_blank\" link-id=\"main-button-link\" style=\"font-family: &#39;Google Sans&#39;,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; line-height: 16px; color: #ffffff; font-weight: 400; text-decoration: none;font-size: 14px;display:inline-block;padding: 10px 24px;background-color: #4184F3; border-radius: 5px; min-width: 90px;\">Periksa aktivitas</a></div></div><div style=\"padding-top: 20px; font-size: 12px; line-height: 16px; color: #5f6368; letter-spacing: 0.3px; text-align: center\">Anda juga dapat melihat aktivitas keamanan di<br><a style=\"color: rgba(0, 0, 0, 0.87);text-decoration: inherit;\">https://myaccount.google.com/notifications</a></div></div><div style=\"text-align: left;\"><div style=\"font-family: Roboto-Regular,Helvetica,Arial,sans-serif;color: rgba(0,0,0,0.54); font-size: 11px; line-height: 18px; padding-top: 12px; text-align: center;\"><div>Anda menerima email ini sebagai pemberitahuan tentang perubahan penting pada layanan dan Akun Google Anda.</div><div style=\"direction: ltr;\">&copy; 2025 Google LLC, <a class=\"afal\" style=\"font-family: Roboto-Regular,Helvetica,Arial,sans-serif;color: rgba(0,0,0,0.54); font-size: 11px; line-height: 18px; padding-top: 12px; text-align: center;\">1600 Amphitheatre Parkway, Mountain View, CA 94043, USA</a></div></div></div></td><td width=\"8\" style=\"width: 8px;\"></td></tr></table></td></tr><tr height=\"32\" style=\"height: 32px;\"><td></td></tr></table></body></html>",
+  "text": "[image: Google]\nSandi aplikasi yang digunakan untuk login telah dihapus\n\n\nbernatdsitumeang077@gmail.com\nJika bukan Anda yang menghapus sandi ini, mungkin akun Anda digunakan orang\nlain. Periksa dan amankan akun Anda sekarang.\nPeriksa aktivitas\n<https://accounts.google.com/AccountChooser?Email=bernatdsitumeang077@gmail.com&continue=https://myaccount.google.com/alert/nt/1748185402931?rfn%3D269%26rfnc%3D1%26eid%3D-1950396552840029940%26et%3D0>\nAnda juga dapat melihat aktivitas keamanan di\nhttps://myaccount.google.com/notifications\nAnda menerima email ini sebagai pemberitahuan tentang perubahan penting\npada layanan dan Akun Google Anda.\n© 2025 Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA\n",
+  "textAsHtml": "<p>[image: Google]<br/>Sandi aplikasi yang digunakan untuk login telah dihapus</p><p><a href=\"mailto:bernatdsitumeang077@gmail.com\">bernatdsitumeang077@gmail.com</a><br/>Jika bukan Anda yang menghapus sandi ini, mungkin akun Anda digunakan orang<br/>lain. Periksa dan amankan akun Anda sekarang.<br/>Periksa aktivitas<br/>&lt;<a href=\"https://accounts.google.com/AccountChooser?Email=bernatdsitumeang077@gmail.com&continue=https://myaccount.google.com/alert/nt/1748185402931?rfn%3D269%26rfnc%3D1%26eid%3D-1950396552840029940%26et%3D0\">https://accounts.google.com/AccountChooser?Email=bernatdsitumeang077@gmail.com&continue=https://myaccount.google.com/alert/nt/1748185402931?rfn%3D269%26rfnc%3D1%26eid%3D-1950396552840029940%26et%3D0</a>&gt;<br/>Anda juga dapat melihat aktivitas keamanan di<br/><a href=\"https://myaccount.google.com/notifications\">https://myaccount.google.com/notifications</a><br/>Anda menerima email ini sebagai pemberitahuan tentang perubahan penting<br/>pada layanan dan Akun Google Anda.<br/>&copy; 2025 Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA</p>",
+  "subject": "Notifikasi keamanan",
+  "date": "2025-05-25T15:03:22.000Z",
+  "to": {
+    "value": [
+      {
+        "address": "bernatdsitumeang077@gmail.com",
+        "name": ""
+      }
+    ],
+    "html": "<span class=\"mp_address_group\"><a href=\"mailto:bernatdsitumeang077@gmail.com\" class=\"mp_address_email\">bernatdsitumeang077@gmail.com</a></span>",
+    "text": "bernatdsitumeang077@gmail.com"
+  },
+  "from": {
+    "value": [
+      {
+        "address": "no-reply@accounts.google.com",
+        "name": "Google"
+      }
+    ],
+    "html": "<span class=\"mp_address_group\"><span class=\"mp_address_name\">Google</span> &lt;<a href=\"mailto:no-reply@accounts.google.com\" class=\"mp_address_email\">no-reply@accounts.google.com</a>&gt;</span>",
+    "text": "\"Google\" <no-reply@accounts.google.com>"
+  },
+  "messageId": "<COP8AoU5NqsUK54YNVia5Q@notifications.google.com>"
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Laporan Transaksi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Unduh Laporan Transaksi</h2>
+    <form id="reportForm" autocomplete="off">
+      <label>Email Gmail:
+        <input type="email" id="email" required>
+      </label>
+      <label>Telegram Chat ID:
+        <input type="text" id="telegramChatId" required>
+      </label>
+      <label>Tanggal Mulai:
+        <input type="date" id="startDate">
+      </label>
+      <label>Tanggal Selesai:
+        <input type="date" id="endDate">
+      </label>
+      <button type="submit">Verifikasi & Unduh</button>
+    </form>
+    <div id="reportResult"></div>
+  </div>
+
+  <script>
+  document.getElementById('reportForm').onsubmit = async function(e) {
+    e.preventDefault();
+    const email = document.getElementById('email').value;
+    const telegramChatId = document.getElementById('telegramChatId').value;
+    const startDate = document.getElementById('startDate').value;
+    const endDate = document.getElementById('endDate').value;
+    const resultDiv = document.getElementById('reportResult');
+
+    // Validasi sederhana di frontend
+    if (!email || !telegramChatId) {
+      resultDiv.innerHTML = '<span class="error">Email dan Telegram Chat ID harus diisi.</span>';
+      return;
+    }
+
+    // Panggil API untuk verifikasi
+    const res = await fetch('/api/email-accounts/verify', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, telegramChatId })
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+      resultDiv.innerHTML = '<span class="success">Verifikasi berhasil! Mengunduh laporan...</span>';
+      // Jika verifikasi berhasil, arahkan untuk mengunduh laporan
+      let reportUrl = `/api/transactions/report/excel?email=${encodeURIComponent(email)}`;
+      if (startDate) {
+        reportUrl += `&startDate=${startDate}`;
+      }
+      if (endDate) {
+        reportUrl += `&endDate=${endDate}`;
+      }
+      window.location.href = reportUrl;
+    } else {
+      resultDiv.innerHTML = `<span class="error">${data.message || 'Verifikasi gagal. Periksa kembali email dan Chat ID Anda.'}</span>`;
+    }
+  };
+  </script>
+</body>
+</html>

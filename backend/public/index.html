@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>AI My Asisstant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-wrapper">
+    <div class="container">
+    <h2>AI My Assistant</h2>
+    <form id="registerForm" autocomplete="off">
+      <label>Email Gmail:
+        <input type="email" id="email" required>
+      </label>
+      <label>App Password Gmail:
+        <input type="text" id="appPassword" required>
+      </label>
+      <label>Telegram Chat ID:
+        <input type="text" id="telegramChatId" required>
+        <small>
+          Belum tahu Chat ID? 
+          <a href="https://t.me/BernatdBot" target="_blank" id="connectTelegram">Klik di sini hubungkan ke Telegram</a>
+        </small>
+      </label>
+      <button type="submit">Daftarkan</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <div class="container">
+    <h2>Laporan Transaksi</h2>
+    <p>Unduh rekapitulasi semua transaksi dalam format Excel.</p>
+      <a href="report.html" class="button">Buat Laporan Excel</a>
+    </div>
+  </div>
+  <script>
+  // Auto-isi Chat ID jika ada di URL
+  window.onload = function() {
+    const params = new URLSearchParams(window.location.search);
+    const chatId = params.get('chatId');
+    if (chatId) {
+      document.getElementById('telegramChatId').value = chatId;
+    }
+  };
+
+  document.getElementById('registerForm').onsubmit = async function(e) {
+    e.preventDefault();
+    const email = document.getElementById('email').value;
+    const appPassword = document.getElementById('appPassword').value;
+    const telegramChatId = document.getElementById('telegramChatId').value;
+
+    const res = await fetch('/api/email-accounts/register', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, appPassword, telegramChatId })
+    });
+    const data = await res.json();
+    const resultDiv = document.getElementById('result');
+    if (data.success) {
+      resultDiv.innerHTML = '<span class="success">Berhasil didaftarkan!</span>';
+    } else {
+      resultDiv.innerHTML = '<span class="error">' + (data.message || data.error) + '</span>';
+    }
+  };
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #f8fafc 0%, #e9e9f3 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Menambahkan jarak antar kontainer */
+}
+body > .container, .main-wrapper > .container {
+  background: rgba(255,255,255,0.98);
+  border-radius: 14px;
+  box-shadow: 0 4px 24px 0 rgba(31, 38, 135, 0.10);
+  padding: 32px 24px 24px 24px;
+  max-width: 340px;
+  width: 100%;
+  animation: fadeInUp 0.8s cubic-bezier(.39,.575,.565,1.000);
+}
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+h2 {
+  text-align: center;
+  color: #2575fc;
+  margin-bottom: 22px;
+  letter-spacing: 0.5px;
+  font-size: 1.18rem;
+}
+label {
+  display: block;
+  margin-top: 14px;
+  color: #333;
+  font-weight: 500;
+  font-size: 0.98rem;
+}
+input {
+  width: 100%;
+  padding: 7px 10px;
+  margin-top: 5px;
+  border: 1.2px solid #d1d9e6;
+  border-radius: 6px;
+  font-size: 0.98rem;
+  transition: border 0.3s;
+  outline: none;
+  background: #f7faff;
+  box-sizing: border-box;
+}
+input:focus {
+  border: 1.2px solid #2575fc;
+  background: #fff;
+}
+button {
+  width: 60%;
+  margin: 22px auto 0 auto;
+  display: block;
+  padding: 9px 0;
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 1px 4px rgba(80, 120, 255, 0.08);
+  transition: background 0.3s, transform 0.2s;
+}
+button:hover {
+  background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
+  transform: translateY(-1px) scale(1.03);
+}
+small {
+  display: block;
+  margin-top: 4px;
+  color: #888;
+  font-size: 0.91em;
+}
+a#connectTelegram {
+  color: #2575fc;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+a#connectTelegram:hover {
+  color: #6a11cb;
+  text-decoration: underline;
+}
+#result {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 1em;
+  min-height: 20px;
+  transition: color 0.3s;
+}
+.success {
+  color: #1bc47d;
+  font-weight: 600;
+  animation: popIn 0.5s;
+}
+.error {
+  color: #e74c3c;
+  font-weight: 600;
+  animation: popIn 0.5s;
+}
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.95);}
+  to { opacity: 1; transform: scale(1);}
+}

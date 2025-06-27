@@ -1,0 +1,128 @@
+{
+  "attachments": [],
+  "headers": {},
+  "headerLines": [
+    {
+      "key": "delivered-to",
+      "line": "Delivered-To: bernatdsitumeang077@gmail.com"
+    },
+    {
+      "key": "received",
+      "line": "Received: by 2002:a05:7300:e12f:b0:172:3dc2:f9d0 with SMTP id hd47csp245632dyb;\r\n        Fri, 23 May 2025 22:58:57 -0700 (PDT)"
+    },
+    {
+      "key": "x-received",
+      "line": "X-Received: by 2002:a17:907:2cf8:b0:ad2:23d0:cde3 with SMTP id a640c23a62f3a-ad85b2178famr43898166b.15.1748066337153;\r\n        Fri, 23 May 2025 22:58:57 -0700 (PDT)"
+    },
+    {
+      "key": "arc-seal",
+      "line": "ARC-Seal: i=1; a=rsa-sha256; t=1748066337; cv=none;\r\n        d=google.com; s=arc-20240605;\r\n        b=M+M2IklFJ1P4xdcieI1W/SGDPdhgdcV2+RXq9ZI+Rk+1lbg4XyIFL7AEC/3S2au1nD\r\n         ZHCY4zxP8IrlI1YFKOmoCAxHnliZ4bF99kFkAFxf9NR2TDhMJf6RjHImHRajcPCAGWJk\r\n         PO2L/wX4w6LU9STp27yFueaZ/t6eHgx4Nqb5CRerYU83Np5F/QvqL9/rvDCLyiTG8FiY\r\n         nG4p+sw9YQeZU0lHsGkDbttnRQMSl/KYSbnEKtT5K4nl/H0tYE3xkBUtxOqGvRHHMx2V\r\n         yn+OMJMrAEma5OS+/4wJDw52VC/IbrHjtX/AF5y/4aDtRxVph9WP9gvc3n96CBJYHxai\r\n         UVcw=="
+    },
+    {
+      "key": "arc-message-signature",
+      "line": "ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;\r\n        h=to:subject:message-id:date:from:mime-version:dkim-signature;\r\n        bh=qqqGZMwcxKMciZt6hiPMlnIjogmTT5LYyrTZ1UIkSek=;\r\n        fh=IlZIoqWdUvKyK4AClkXBlX+WRlTLJi8OEzCeedV5Y/M=;\r\n        b=JwV127yIgiiNhe+cNRNsAR0XO2chjbc2tGQLgyNO4FhAYP6lQnZCjrQjtFzVWJrJTe\r\n         0dl/OXZcw/JqoGvNosmzfNhLvHn8aaKtexYVDtA6uEZLQEWHmXaP2TmYi4Ac8JXwl7xP\r\n         9AXzWphVrv1V7TG8bj6iSHJDqpPa7B+CZe/kjPpiOUndbwYi8we3ao4XosrLpe7VXVsL\r\n         U4Dq04oZ2FrYYTWgx4L+sOYMpl687cdEZq/q8vM9JB+O2sHqnPco9Gg3ltgkHVXDbMWL\r\n         Hnb+04VHX2X+aT6oPj2CBkR+R3KXXbL5JWSiiLlWKx3KjmfzUkkbM581MwfQ8oIJ738y\r\n         yvtg==;\r\n        dara=google.com"
+    },
+    {
+      "key": "arc-authentication-results",
+      "line": "ARC-Authentication-Results: i=1; mx.google.com;\r\n       dkim=pass header.i=@gmail.com header.s=20230601 header.b=G9bwBOEa;\r\n       spf=pass (google.com: domain of bernadbernadajja@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=bernadbernadajja@gmail.com;\r\n       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;\r\n       dara=pass header.i=@gmail.com"
+    },
+    {
+      "key": "return-path",
+      "line": "Return-Path: <bernadbernadajja@gmail.com>"
+    },
+    {
+      "key": "received",
+      "line": "Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])\r\n        by mx.google.com with SMTPS id a640c23a62f3a-ad52d06b88asor118619566b.8.2025.05.23.22.58.56\r\n        for <bernatdsitumeang077@gmail.com>\r\n        (Google Transport Security);\r\n        Fri, 23 May 2025 22:58:57 -0700 (PDT)"
+    },
+    {
+      "key": "received-spf",
+      "line": "Received-SPF: pass (google.com: domain of bernadbernadajja@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;"
+    },
+    {
+      "key": "authentication-results",
+      "line": "Authentication-Results: mx.google.com;\r\n       dkim=pass header.i=@gmail.com header.s=20230601 header.b=G9bwBOEa;\r\n       spf=pass (google.com: domain of bernadbernadajja@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=bernadbernadajja@gmail.com;\r\n       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;\r\n       dara=pass header.i=@gmail.com"
+    },
+    {
+      "key": "dkim-signature",
+      "line": "DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=gmail.com; s=20230601; t=1748066336; x=1748671136; dara=google.com;\r\n        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject\r\n         :date:message-id:reply-to;\r\n        bh=qqqGZMwcxKMciZt6hiPMlnIjogmTT5LYyrTZ1UIkSek=;\r\n        b=G9bwBOEa2V7/9mYTbdT9mUbkIPx+3onhv6BuWX8TP3OprOvEaHZTEEoEIrHzvKs7/o\r\n         5rqyQAt/NAc7jFmxkuxpjHkUZAdnnMgh0C9wlM69eHsi6xq9tIH18nMVXui/dGgYwusj\r\n         HG/Wpqs5/dEYrWgbcfmg9DrPlGHyw0fc0HSlsmuCkPBiCNRE/zkMcb1SkitpfejPTmrZ\r\n         gB+l6D87dcrTNj3FMgReTINhSQTBEgbiPxZWcnq1j+KooCTZc8+f8wsCFGnRJMG8+5gK\r\n         q0XY2JgsLj3Cvm1+VzCqCz0y1F62TdpR41rDjmiXkS1JZLABnFueJGgJTTO8Rm1OgGZq\r\n         RdMA=="
+    },
+    {
+      "key": "x-google-dkim-signature",
+      "line": "X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=1e100.net; s=20230601; t=1748066336; x=1748671136;\r\n        h=to:subject:message-id:date:from:mime-version:x-gm-message-state\r\n         :from:to:cc:subject:date:message-id:reply-to;\r\n        bh=qqqGZMwcxKMciZt6hiPMlnIjogmTT5LYyrTZ1UIkSek=;\r\n        b=AninX76zZSIRTxrdUiAfLZsUDO6AXlcnOMBi7sjxjKzHouYhAolSigebzJbdsxzBgK\r\n         NhdDj9jJUrC1wk8m1F3DpnmkpB8Ih2L/oiPU7fYD17vYLZLnl1/Y5ZAr0IpzuE9qzTo5\r\n         R9W3c/FrbCbsnwxO7l4wQNR8XDnVTjI3H4pLRQpDeMR5BHHzxglgRSJxXcYo/T9jguvy\r\n         zlc+K/ssy7VAy4213mubti477gM5vkvDga+zcBbvTZGave1Xlvv5clCLfeuuWxLm10UM\r\n         pgmUGE2A/Jd4TPnxKLNBvM42lBGVgWYj8OPAQgyQLyXA6+NNLK0dJ4+dtGZJ8ma68TSg\r\n         DaHg=="
+    },
+    {
+      "key": "x-gm-message-state",
+      "line": "X-Gm-Message-State: AOJu0Yw7kzP1tYZ+RyFgES40fB8LEph8YtT50/8JRZ9mdJfYTjkxM1ek\r\n\t7v+uju4G+Wscz9vZ/vAAPjqSuFNp/vvMCGf0t4KHTa1pD59xzwgTCw7V2jetLd/7mIK+WgHTAlB\r\n\tNUMVssfDTmSn/mmYHeax0VsfNC1M5bS7e+w=="
+    },
+    {
+      "key": "x-gm-gg",
+      "line": "X-Gm-Gg: ASbGncv2gKE0Sf1WX2XP6RInusaPynnWucafqJQSYOo36yE/WOf9m3SK6sgwxFkIVV7\r\n\te0Y3HkCWlUktd/mUt39ILKGK47HXwhVZ0mikuhrLHPOFpQBrp9hM84WnWwAyhq/uwnLTQPt/GwP\r\n\ti9vn8EKCoI5e/qehnwYB6l2LhwhibiDmZk"
+    },
+    {
+      "key": "x-google-smtp-source",
+      "line": "X-Google-Smtp-Source: AGHT+IFqWjbhRpIM2EMGVndVcqs0fGCp8IZv/+TWJ8lE4mYzilzSgngA1XQ1T9JgfJAEXMVqKl2U6OWiSbGbYhMSXMk="
+    },
+    {
+      "key": "x-received",
+      "line": "X-Received: by 2002:a17:907:3e06:b0:ad5:27f5:7174 with SMTP id\r\n a640c23a62f3a-ad85adbbbf7mr153879866b.0.1748066336372; Fri, 23 May 2025\r\n 22:58:56 -0700 (PDT)"
+    },
+    {
+      "key": "mime-version",
+      "line": "MIME-Version: 1.0"
+    },
+    {
+      "key": "from",
+      "line": "From: Bernad Bernadajja <bernadbernadajja@gmail.com>"
+    },
+    {
+      "key": "date",
+      "line": "Date: Sat, 24 May 2025 12:58:44 +0700"
+    },
+    {
+      "key": "x-gm-features",
+      "line": "X-Gm-Features: AX0GCFviptYVOKZdzreeESM3qih1Fnw7XXUHdjTUuWvqHTBS0Mt32V26hj_kJBk"
+    },
+    {
+      "key": "message-id",
+      "line": "Message-ID: <CABxNLW+-bBOd7gi6Y2HTpEJ_SrPP35EYGajG4u8THaQ3VcTS2Q@mail.gmail.com>"
+    },
+    {
+      "key": "subject",
+      "line": "Subject: Notifikasi Transaksi"
+    },
+    {
+      "key": "to",
+      "line": "To: \"bernatdsitumeang077@gmail.com\" <bernatdsitumeang077@gmail.com>"
+    },
+    {
+      "key": "content-type",
+      "line": "Content-Type: multipart/alternative; boundary=\"00000000000005fd780635db6985\""
+    }
+  ],
+  "html": "<div dir=\"auto\">Debit Rp75.000 di indomaret via QRIS</div>\n",
+  "text": "Debit Rp75.000 di indomaret via QRIS\n",
+  "textAsHtml": "<p>Debit Rp75.000 di indomaret via QRIS</p>",
+  "subject": "Notifikasi Transaksi",
+  "date": "2025-05-24T05:58:44.000Z",
+  "to": {
+    "value": [
+      {
+        "address": "bernatdsitumeang077@gmail.com",
+        "name": ""
+      }
+    ],
+    "html": "<span class=\"mp_address_group\"><a href=\"mailto:bernatdsitumeang077@gmail.com\" class=\"mp_address_email\">bernatdsitumeang077@gmail.com</a></span>",
+    "text": "bernatdsitumeang077@gmail.com"
+  },
+  "from": {
+    "value": [
+      {
+        "address": "bernadbernadajja@gmail.com",
+        "name": "Bernad Bernadajja"
+      }
+    ],
+    "html": "<span class=\"mp_address_group\"><span class=\"mp_address_name\">Bernad Bernadajja</span> &lt;<a href=\"mailto:bernadbernadajja@gmail.com\" class=\"mp_address_email\">bernadbernadajja@gmail.com</a>&gt;</span>",
+    "text": "\"Bernad Bernadajja\" <bernadbernadajja@gmail.com>"
+  },
+  "messageId": "<CABxNLW+-bBOd7gi6Y2HTpEJ_SrPP35EYGajG4u8THaQ3VcTS2Q@mail.gmail.com>"
+}

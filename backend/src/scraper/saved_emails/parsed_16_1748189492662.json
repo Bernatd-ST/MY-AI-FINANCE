@@ -1,0 +1,128 @@
+{
+  "attachments": [],
+  "headers": {},
+  "headerLines": [
+    {
+      "key": "delivered-to",
+      "line": "Delivered-To: bernatdsitumeang077@gmail.com"
+    },
+    {
+      "key": "received",
+      "line": "Received: by 2002:a05:7300:e12f:b0:172:3dc2:f9d0 with SMTP id hd47csp241952dyb;\r\n        Fri, 23 May 2025 22:40:51 -0700 (PDT)"
+    },
+    {
+      "key": "x-received",
+      "line": "X-Received: by 2002:a17:907:7637:b0:acb:7de1:69f0 with SMTP id a640c23a62f3a-ad85b0b7158mr40586366b.6.1748065251522;\r\n        Fri, 23 May 2025 22:40:51 -0700 (PDT)"
+    },
+    {
+      "key": "arc-seal",
+      "line": "ARC-Seal: i=1; a=rsa-sha256; t=1748065251; cv=none;\r\n        d=google.com; s=arc-20240605;\r\n        b=g90TUbP61Hj5nfTKx7jF93+SLE/G2a+e7Y66KNouWLkZk0D01h7yStV2RHkPPpnGmI\r\n         KO+vjRajQE1Jq7ejXjH8dy1fZ6HwgafydNCd7J1ILxe5Q99ZGL/nlY+4krZeXs47wAaw\r\n         WBd4uZGi6EXjEzoauhp0/ljSmdfJS/sAdGEjr1Q09/HF51kmX4R+KPB/amTV1WRGdltl\r\n         3lh3f55Y5wj/RdJ2a/5Kn2cyOtMtFFyw7021abhpLxDmdjB9Dk2t2h0OLmgAIdmpVSJL\r\n         YKxamZs6LPuWZXkEH6/qENWjL3qKTDtRsoGZt93CgBo/VVbGvSouh+V9caCuA5k+Nvfz\r\n         EaZA=="
+    },
+    {
+      "key": "arc-message-signature",
+      "line": "ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;\r\n        h=to:subject:message-id:date:from:mime-version:dkim-signature;\r\n        bh=//YgWzLWlg/37G+LmbvFormxdYpaxUhY7GNJvauwhoo=;\r\n        fh=IlZIoqWdUvKyK4AClkXBlX+WRlTLJi8OEzCeedV5Y/M=;\r\n        b=WyiC+fYej72vIxAphVdW38ZECwO9ESVkSW1gg/ifKmkvnZceyJw7FZM9zckAm5JWWm\r\n         J9Gw3t4GrpgnifnZK9ehyEi1CMMOnsfYDHYs9CJb6J188IbR+MkK1RLhcIu8yJtJ4dEY\r\n         hT5/+DZeKlGYdFqSaAHjD5nvEygVJHKWzsh+HpSb2Rnhm/NK6f1/b4/5OwAoAhwydzX2\r\n         V5tfkgIsn//g2x+iWXGMYD6BUC6BZNFbet5SSqtR0Oi57HzOkivn/dsV9Upd5IWCGYwm\r\n         SNmpl/n+v7FrJ2pokvAmdXEnhStx4ur0lJwoBMGoE0ZgqKFIESpF/z1yf7tjkw7pDukT\r\n         4LkQ==;\r\n        dara=google.com"
+    },
+    {
+      "key": "arc-authentication-results",
+      "line": "ARC-Authentication-Results: i=1; mx.google.com;\r\n       dkim=pass header.i=@gmail.com header.s=20230601 header.b=\"UC/nxTSd\";\r\n       spf=pass (google.com: domain of bernadbernadajja@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=bernadbernadajja@gmail.com;\r\n       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;\r\n       dara=pass header.i=@gmail.com"
+    },
+    {
+      "key": "return-path",
+      "line": "Return-Path: <bernadbernadajja@gmail.com>"
+    },
+    {
+      "key": "received",
+      "line": "Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])\r\n        by mx.google.com with SMTPS id a640c23a62f3a-ad84cf75444sor114963866b.7.2025.05.23.22.40.51\r\n        for <bernatdsitumeang077@gmail.com>\r\n        (Google Transport Security);\r\n        Fri, 23 May 2025 22:40:51 -0700 (PDT)"
+    },
+    {
+      "key": "received-spf",
+      "line": "Received-SPF: pass (google.com: domain of bernadbernadajja@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;"
+    },
+    {
+      "key": "authentication-results",
+      "line": "Authentication-Results: mx.google.com;\r\n       dkim=pass header.i=@gmail.com header.s=20230601 header.b=\"UC/nxTSd\";\r\n       spf=pass (google.com: domain of bernadbernadajja@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=bernadbernadajja@gmail.com;\r\n       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;\r\n       dara=pass header.i=@gmail.com"
+    },
+    {
+      "key": "dkim-signature",
+      "line": "DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=gmail.com; s=20230601; t=1748065250; x=1748670050; dara=google.com;\r\n        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject\r\n         :date:message-id:reply-to;\r\n        bh=//YgWzLWlg/37G+LmbvFormxdYpaxUhY7GNJvauwhoo=;\r\n        b=UC/nxTSdg0QS+CpttLiYO334c7dIo2DpgQZvaaZM0zSEMCSKbfzbqXPwqg9Pvxy2eH\r\n         JWYsa1z57xq7Dzg59L6K5uI2kXvnlZtHhoh21TR2BED0qVHfH6w393+NqBjz1hF/HK+g\r\n         nX/DlrZdAKH930cmYO62eKql5re+M350et62Ew3CIqcZxUqvDg5N97EAJLwZFGhLbb3L\r\n         xi4UzHwvMl6By/QXwIsdKPC0/WsMWIWpTPODyHvhBUti+8WYisjkoF6fctXpySLAtqgW\r\n         cjR9z/cfE4LnmIYSjvYsNvaJdGfA/4h78tJS0O8dIBJPe9kKl9S2eO/NYmhUHY/c2tym\r\n         +0Lw=="
+    },
+    {
+      "key": "x-google-dkim-signature",
+      "line": "X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=1e100.net; s=20230601; t=1748065250; x=1748670050;\r\n        h=to:subject:message-id:date:from:mime-version:x-gm-message-state\r\n         :from:to:cc:subject:date:message-id:reply-to;\r\n        bh=//YgWzLWlg/37G+LmbvFormxdYpaxUhY7GNJvauwhoo=;\r\n        b=A0AaHw+iuijMLBGfcP8nluFxfRaM9h0oPKKhBm7GzZ31gAc+LTIsOJ3N3FAYrEHpEg\r\n         bDJzZUKVdk18kBPvrjAW/uOr44LhkwahmB+GCsKxr+Z3c3mM5G4zGVlnQoC6EV0XYs/I\r\n         a6YGVb6GpL6IwRfdZIEl7nNK56QnkBBYurYHJTkBler3dcPX2R/5Doy/Eu3858j9DI8R\r\n         99lDvX7CTl0TJ/zH60rq7Ls5FW2IYtPUfhP+Em7/H3Ednu6ot5AEDu21dQFwOLgLoDew\r\n         pVk+DXeSjL/trkGKiFSqlBM1boxwc4afnEETD3hrFXEyG8+4C6dCkEJ6ptAy+1BUdpfJ\r\n         9fsw=="
+    },
+    {
+      "key": "x-gm-message-state",
+      "line": "X-Gm-Message-State: AOJu0YxujVoJzYtnPUsNRDvhqhGllb/TJSaN1sG7pc6wreGxiNiLjmXc\r\n\trTK/sEjj58R21ffvJ9wvmtYQ3x6kJSIpVHnm8eRZ0B55Hz19tvjnbgNu0rcOEhvas7+VNKTkyd1\r\n\tRXDPvM8lFemUfeMKRRlp9Bm2bsetT0ZkvUA=="
+    },
+    {
+      "key": "x-gm-gg",
+      "line": "X-Gm-Gg: ASbGncuL5NdEEOOO2J0jJrsKOq+ytFsgPx8NPbFMnwwJOZjUgfFhyA1Hon/dKwizAWZ\r\n\t6wQ6IOiKghgu4tT98mXkUgzw8+wMvDFqlkYDaHn863yDgBKWJavu4zrRbVEGKW9o8UrHstZ2W5y\r\n\tg57cEtS8WRrpVLb10dgJX3l8RNar9YRWti"
+    },
+    {
+      "key": "x-google-smtp-source",
+      "line": "X-Google-Smtp-Source: AGHT+IERDzsQSDAy0xLwDtzB+DD2aGAUb3G2BJqaDN7S735DJgO2S6R0m0dRtBbm19187tydnEgt9IOdGbp7Yg92W7g="
+    },
+    {
+      "key": "x-received",
+      "line": "X-Received: by 2002:a17:907:a088:b0:ad5:4737:f030 with SMTP id\r\n a640c23a62f3a-ad8596d8befmr170116966b.1.1748065250290; Fri, 23 May 2025\r\n 22:40:50 -0700 (PDT)"
+    },
+    {
+      "key": "mime-version",
+      "line": "MIME-Version: 1.0"
+    },
+    {
+      "key": "from",
+      "line": "From: Bernad Bernadajja <bernadbernadajja@gmail.com>"
+    },
+    {
+      "key": "date",
+      "line": "Date: Sat, 24 May 2025 12:40:39 +0700"
+    },
+    {
+      "key": "x-gm-features",
+      "line": "X-Gm-Features: AX0GCFu_vbTusOCYzJYloSO57dud6mU6GjT84uUcOCpvzPo0vXVzesuoZNJ9iCM"
+    },
+    {
+      "key": "message-id",
+      "line": "Message-ID: <CABxNLWLABepE+GXgRryc=tOggiSQ4xA7mA=PQ=dsKLza-4HN0w@mail.gmail.com>"
+    },
+    {
+      "key": "subject",
+      "line": "Subject: QRIS"
+    },
+    {
+      "key": "to",
+      "line": "To: \"bernatdsitumeang077@gmail.com\" <bernatdsitumeang077@gmail.com>"
+    },
+    {
+      "key": "content-type",
+      "line": "Content-Type: multipart/alternative; boundary=\"00000000000049b0f20635db28ed\""
+    }
+  ],
+  "html": "<div dir=\"auto\"><div dir=\"auto\">Anda telah melakukan pembayaran QRIS sebesar Rp50.000 di Starbucks.</div><div dir=\"auto\">Waktu: 20 Mei 2024 10:30 WIB.</div><div dir=\"auto\">No. Transaksi: QR123456.</div></div>\n",
+  "text": "Anda telah melakukan pembayaran QRIS sebesar Rp50.000 di Starbucks.\nWaktu: 20 Mei 2024 10:30 WIB.\nNo. Transaksi: QR123456.\n",
+  "textAsHtml": "<p>Anda telah melakukan pembayaran QRIS sebesar Rp50.000 di Starbucks.<br/>Waktu: 20 Mei 2024 10:30 WIB.<br/>No. Transaksi: QR123456.</p>",
+  "subject": "QRIS",
+  "date": "2025-05-24T05:40:39.000Z",
+  "to": {
+    "value": [
+      {
+        "address": "bernatdsitumeang077@gmail.com",
+        "name": ""
+      }
+    ],
+    "html": "<span class=\"mp_address_group\"><a href=\"mailto:bernatdsitumeang077@gmail.com\" class=\"mp_address_email\">bernatdsitumeang077@gmail.com</a></span>",
+    "text": "bernatdsitumeang077@gmail.com"
+  },
+  "from": {
+    "value": [
+      {
+        "address": "bernadbernadajja@gmail.com",
+        "name": "Bernad Bernadajja"
+      }
+    ],
+    "html": "<span class=\"mp_address_group\"><span class=\"mp_address_name\">Bernad Bernadajja</span> &lt;<a href=\"mailto:bernadbernadajja@gmail.com\" class=\"mp_address_email\">bernadbernadajja@gmail.com</a>&gt;</span>",
+    "text": "\"Bernad Bernadajja\" <bernadbernadajja@gmail.com>"
+  },
+  "messageId": "<CABxNLWLABepE+GXgRryc=tOggiSQ4xA7mA=PQ=dsKLza-4HN0w@mail.gmail.com>"
+}

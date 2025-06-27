@@ -1,0 +1,162 @@
+{
+  "attachments": [],
+  "headers": {},
+  "headerLines": [
+    {
+      "key": "delivered-to",
+      "line": "Delivered-To: bernatdsitumeang077@gmail.com"
+    },
+    {
+      "key": "received",
+      "line": "Received: by 2002:a05:7300:e12f:b0:172:3dc2:f9d0 with SMTP id hd47csp226821dyb;\r\n        Fri, 23 May 2025 21:39:53 -0700 (PDT)"
+    },
+    {
+      "key": "x-google-smtp-source",
+      "line": "X-Google-Smtp-Source: AGHT+IHIFW/MgssF2nrLEW7cX8vjGG6soI377A7jaccJklepKwKHcM+xj2MEbUhivAL0NwjNOT2b"
+    },
+    {
+      "key": "x-received",
+      "line": "X-Received: by 2002:a17:90b:3ec6:b0:2fe:b972:a2c3 with SMTP id 98e67ed59e1d1-3110efc8b50mr953913a91.0.1748061593389;\r\n        Fri, 23 May 2025 21:39:53 -0700 (PDT)"
+    },
+    {
+      "key": "arc-seal",
+      "line": "ARC-Seal: i=1; a=rsa-sha256; t=1748061593; cv=none;\r\n        d=google.com; s=arc-20240605;\r\n        b=PCgNT+S9Ov/NvLCv+x9modFElExvmN2l+ccmNlYazFiQVqmYbx9DHCEeIYCpp6CRDS\r\n         F3nSCYtu22MzypN/0XEFnNG3OWDpwjPMd7zznTZjOnZi0lnSNB8zqGaXS7RxqK0YxjDL\r\n         zni5aL7Wrv4NOjbni4NJJBlbudyEXx8n99TxT6HXbjiQ2SWTq3Z31x7rfjPPp/KE/a4C\r\n         v+p+ykXnsnbmWM1fFEM+s78RgFgSVagCLQJa6PTOtFLrQ5EwxeJ56MKgRKHUrvlIrkkc\r\n         2Dd0ArEiMpEjSEsK+NPEJuUQYghWhIZhMdj9yH/ZCX3YCwo/ijbmNlfiXneUuGWOQaEk\r\n         wBzw=="
+    },
+    {
+      "key": "arc-message-signature",
+      "line": "ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;\r\n        h=list-unsubscribe:list-unsubscribe-post:mime-version:subject\r\n         :message-id:to:reply-to:from:date:dkim-signature:dkim-signature;\r\n        bh=1UI/5vxuKV2kC7h8Wr1H5aziaMFBR8wAFTxnIEFuGeA=;\r\n        fh=MVIl3rZrW5Hn8Fq7phsUPwkyNNNlUXqOzqGLMWrnTko=;\r\n        b=i9GVGJUGza6ixauoeSike/S0ptb3D0cyu6xKqCo07/BeCLpanjpjXRz8BNvLuk9cxW\r\n         /FjsI2nhXE0aPHuoAkQh3Sj/OwhjOfoodsTEpHOlkqfU7WxJSK4X/+Hr00kk3I0pxTY2\r\n         /WUX9LEUO2RvuGRrrxKA/jTSAOJFY5PMFeRpOz9f/eAwkoPfriQB63eIbFm8aZ6+aowb\r\n         vTBHcHhXjpWqzcrspXHIEXrAeaHrw6MYtfLT6Ft81Zb+BzweHulZpcGSfUDRNGdAir8Z\r\n         CbUsF+3Hw4VR0D5AQQOmE7GueT8Np7qXXmn5q07S7I/AqEPuVQr2kGd735qoeOdM2ARR\r\n         /IcQ==;\r\n        dara=google.com"
+    },
+    {
+      "key": "arc-authentication-results",
+      "line": "ARC-Authentication-Results: i=1; mx.google.com;\r\n       dkim=pass header.i=@postman.com header.s=m1 header.b=\"N/56VNCv\";\r\n       dkim=pass header.i=@mktdns.com header.s=m1 header.b=\"AxZ2/duA\";\r\n       spf=pass (google.com: domain of 067-umd-991.0.63476.0.0.9916.9.142951726-1@email.getpostman.com designates 192.28.156.111 as permitted sender) smtp.mailfrom=067-UMD-991.0.63476.0.0.9916.9.142951726-1@email.getpostman.com;\r\n       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=postman.com"
+    },
+    {
+      "key": "return-path",
+      "line": "Return-Path: <067-UMD-991.0.63476.0.0.9916.9.142951726-1@email.getpostman.com>"
+    },
+    {
+      "key": "received",
+      "line": "Received: from email.getpostman.com (email.getpostman.com. [192.28.156.111])\r\n        by mx.google.com with ESMTPS id 98e67ed59e1d1-30f364f7ed8si12950591a91.104.2025.05.23.21.39.53\r\n        for <bernatdsitumeang077@gmail.com>\r\n        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);\r\n        Fri, 23 May 2025 21:39:53 -0700 (PDT)"
+    },
+    {
+      "key": "received-spf",
+      "line": "Received-SPF: pass (google.com: domain of 067-umd-991.0.63476.0.0.9916.9.142951726-1@email.getpostman.com designates 192.28.156.111 as permitted sender) client-ip=192.28.156.111;"
+    },
+    {
+      "key": "authentication-results",
+      "line": "Authentication-Results: mx.google.com;\r\n       dkim=pass header.i=@postman.com header.s=m1 header.b=\"N/56VNCv\";\r\n       dkim=pass header.i=@mktdns.com header.s=m1 header.b=\"AxZ2/duA\";\r\n       spf=pass (google.com: domain of 067-umd-991.0.63476.0.0.9916.9.142951726-1@email.getpostman.com designates 192.28.156.111 as permitted sender) smtp.mailfrom=067-UMD-991.0.63476.0.0.9916.9.142951726-1@email.getpostman.com;\r\n       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=postman.com"
+    },
+    {
+      "key": "x-msfbl",
+      "line": "X-MSFBL: taKkbc1th8HxKcobU4H5y2mRJ9KkArSOruBdqajAAhg=|eyJiIjoiZHZwLTE5Mi0\r\n\tyOC0xNTYtMTExIiwidSI6IjA2Ny1VTUQtOTkxOjA6ODQ2Mzo3NjQzODowOjk5MTY\r\n\t6OTo2MzQ3NjoxNDI5NTE3MjYtMSIsImciOiJiZy1zamQtNjUwIiwiciI6ImJlcm5\r\n\thdGRzaXR1bWVhbmcwNzdAZ21haWwuY29tIn0="
+    },
+    {
+      "key": "dkim-signature",
+      "line": "DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1748061591;\r\n\ts=m1; d=postman.com; i=@postman.com;\r\n\th=List-Unsubscribe:List-Unsubscribe-Post:Content-Type:MIME-Version:Subject:To:From:Date;\r\n\tbh=1UI/5vxuKV2kC7h8Wr1H5aziaMFBR8wAFTxnIEFuGeA=;\r\n\tb=N/56VNCv+gFhVhX7xDoatwIb2TOnO35n1Yn7RNY5iGQkNxIprpraSJ0a09PszuzX\r\n\tCd6LWS+E2uHGNACXIJyM1OiwV1Rh+R3UrqXncWROankN6ftDOvb2QAieAo+owbI2NMf\r\n\tKcJ9X3HfUW4qLjgktE3e4T86HAQpK7mQD/Zo6OGQ="
+    },
+    {
+      "key": "dkim-signature",
+      "line": "DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1748061591;\r\n\ts=m1; d=mktdns.com; i=@mktdns.com;\r\n\th=List-Unsubscribe:List-Unsubscribe-Post:Content-Type:MIME-Version:Subject:To:From:Date;\r\n\tbh=1UI/5vxuKV2kC7h8Wr1H5aziaMFBR8wAFTxnIEFuGeA=;\r\n\tb=AxZ2/duAXEsgkFjlTuruOh6fIc5X+IiQ797HqVPPYG/hAif1aYpVRQRg9OulF0Kz\r\n\tBhDbvOOf9jr2xErmjmP3E9Qz8Ds6mh6HA3XWTlr40renakLiUB5SB9ktZTSrpIlI0S+\r\n\tVBy5BSE3mR14tBUcn2TI1PomMNB9kwd/nSfLRN3E="
+    },
+    {
+      "key": "date",
+      "line": "Date: Fri, 23 May 2025 23:39:51 -0500 (CDT)"
+    },
+    {
+      "key": "from",
+      "line": "From: The Postman Team <marketing@postman.com>"
+    },
+    {
+      "key": "reply-to",
+      "line": "Reply-To: marketing@postman.com"
+    },
+    {
+      "key": "to",
+      "line": "To: bernatdsitumeang077@gmail.com"
+    },
+    {
+      "key": "message-id",
+      "line": "Message-ID: <1199101787.27900.1748061591612@sjmktmail-trigger1f.marketo.org>"
+    },
+    {
+      "key": "subject",
+      "line": "Subject: Stay Connected to Postman"
+    },
+    {
+      "key": "mime-version",
+      "line": "MIME-Version: 1.0"
+    },
+    {
+      "key": "content-type",
+      "line": "Content-Type: multipart/alternative; \r\n\tboundary=\"----=_Part_27899_627940267.1748061591612\""
+    },
+    {
+      "key": "x-binding",
+      "line": "X-Binding: bg-sjd-650"
+    },
+    {
+      "key": "list-unsubscribe-post",
+      "line": "List-Unsubscribe-Post: List-Unsubscribe=One-Click"
+    },
+    {
+      "key": "list-unsubscribe",
+      "line": "List-Unsubscribe: <https://go.postman.com/u/MDY3LVVNRC05OTEAAAGan4_INzfzw1EZeiOd-c6Bq4jGUWyUqUHHA6W7MsistQjfUPBiUqos1T5XlL3SRVHm-80vUO0=?emailAddress=MDY3LVVNRC05OTEAAAGan4_INlSc7MU-fsVYhXmqg3KupKYsRgqTneBtN82rQWmBKj4_ek_Z8CyeMpgq9YFmoeJfRvKjwb2cAblQMQ>, <mailto:GNEGISJWMFIXANKDMFDXCNBYGFKGKUKGMF3UQ4CUK5CG6M3ZONEDSQZTOJUHK4DQOREWGPI=.63476.9916.9@unsub-sj.mktomail.com>"
+    },
+    {
+      "key": "x-marketoid",
+      "line": "X-MarketoID: 067-UMD-991:0:8463:76438:0:9916:9:63476:142951726-1"
+    },
+    {
+      "key": "x-mailfrom",
+      "line": "X-Mailfrom: 067-UMD-991.0.63476.0.0.9916.9.142951726-1@email.getpostman.com"
+    },
+    {
+      "key": "x-mktarchive",
+      "line": "X-MktArchive: false"
+    },
+    {
+      "key": "x-msys-api",
+      "line": "X-MSYS-API: {\"options\":{\"open_tracking\":false,\"click_tracking\":false}}"
+    },
+    {
+      "key": "x-mktmaildkim",
+      "line": "X-MktMailDKIM: true"
+    }
+  ],
+  "html": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" style=\"width: 100%;\">\n<head>   \n<title></title> \n<meta content=\"text/html; charset=utf-8\" http-equiv=\"Content-Type\" /> \n<meta content=\"width=device-width, initial-scale=1.0\" name=\"viewport\" /> \n<!--[if mso]>\n\t\t\t\t<xml>\n\t\t\t\t\t<o:OfficeDocumentSettings>\n\t\t\t\t\t\t<o:PixelsPerInch>96</o:PixelsPerInch>\n\t\t\t\t\t\t<o:AllowPNG/>\n\t\t\t\t\t</o:OfficeDocumentSettings>\n\t\t\t\t</xml>\n\t\t\t\t<![endif]--> \n<!--[if !mso]>\n\t\t\t\t<!--> \n<link href=\"https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900\" rel=\"stylesheet\" type=\"text/css\" /> \n<!--\n\t\t\t\t<![endif]--> \n<style>\n      * {\n        box-sizing: border-box;\n      }\n\n      body {\n        margin: 0;\n        padding: 0;\n      }\n\n      a[x-apple-data-detectors] {\n        color: inherit !important;\n        text-decoration: inherit !important;\n      }\n\n      #MessageViewBody a {\n        color: inherit;\n        text-decoration: none;\n      }\n\n      p {\n        line-height: inherit\n      }\n\n      .desktop_hide,\n      .desktop_hide table {\n        mso-hide: all;\n        display: none;\n        max-height: 0px;\n        overflow: hidden;\n      }\n\n      .image_block img+div {\n        display: none;\n      }\n\n      @media (max-width:620px) {\n\n        .desktop_hide table.icons-inner,\n        .social_block.desktop_hide .social-table {\n          display: inline-block !important;\n        }\n\n        .icons-inner {\n          text-align: center;\n        }\n\n        .icons-inner td {\n          margin: 0 auto;\n        }\n\n        .mobile_hide {\n          display: none;\n        }\n\n        .row-content {\n          width: 100% !important;\n        }\n\n        .stack .column {\n          width: 100%;\n          display: block;\n        }\n\n        .mobile_hide {\n          min-height: 0;\n          max-height: 0;\n          max-width: 0;\n          overflow: hidden;\n          font-size: 0px;\n        }\n\n        .desktop_hide,\n        .desktop_hide table {\n          display: table !important;\n          max-height: none !important;\n        }\n\n        .row-1 .column-1 {\n          padding: 40px 20px !important;\n        }\n      }\n    </style> \n</head> \n<body style=\"background-color: #f2f2f2; margin: 0; padding: 0; -webkit-text-size-adjust: none; text-size-adjust: none;\"> \n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"nl-container\" role=\"presentation\" style=\"mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #f2f2f2;\" width=\"100%\"> \n<tbody> \n<tr> \n<td> \n<table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"row row-1\" role=\"presentation\" style=\"mso-table-lspace: 0pt; mso-table-rspace: 0pt;\" width=\"100%\"> \n<tbody> \n<tr> \n<td> \n<table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"row-content stack\" role=\"presentation\" style=\"mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #fff; color: #000; width: 600px; margin: 0 auto;\" width=\"600\"> \n<tbody> \n<tr> \n<td class=\"column column-1\" style=\"mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 40px; padding-left: 50px; padding-right: 50px; padding-top: 40px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;\" width=\"100%\"> \n<table class=\"image_block block-1\" width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"mso-table-lspace: 0pt; mso-table-rspace: 0pt;\"> \n<tbody> \n<tr> \n<td class=\"pad\" style=\"width:100%;padding-right:0px;padding-left:0px;\"> \n<div class=\"alignment\" align=\"left\" style=\"line-height:10px\"> \n<a href=\n\"https://go.postman.com/MDY3LVVNRC05OTEAAAGan4_IN1bKjK5gWT17vMneMjz35KLhp-rEbJgaQed2e0TtnTJt9X_tDuDfITWSFokxATJAH9g=\" target=\"_blank\" style=\"outline:none\" tabindex=\"-1\"\n><img src=\"https://assets.getpostman.com/email/trimmed_postman-logo-horizontal.png\" style=\"display: block; height: auto; border: 0; max-width: 125px; width: 100%;\" width=\"125\" alt=\"Postman Logo\" title=\"Postman Logo\" /></a> \n</div></td> \n</tr> \n</tbody> \n</table> \n<table border=\"0\" cellpadding=\"10\" cellspacing=\"0\" class=\"divider_block block-2\" role=\"presentation\" style=\"mso-table-lspace: 0pt; mso-table-rspace: 0pt;\" width=\"100%\"> \n<tbody> \n<tr> \n<td class=\"pad\"> \n<div align=\"center\" class=\"alignment\"> \n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"mso-table-lspace: 0pt; mso-table-rspace: 0pt;\" width=\"100%\"> \n<tbody> \n<tr> \n<td class=\"divider_inner\" style=\"font-size: 1px; line-height: 1px; border-top: 1px solid #dddddd;\"> <span></span> </td> \n</tr> \n</tbody> \n</table> \n</div> </td> \n</tr> \n</tbody> \n</table> \n<table border=\"0\" cellpadding=\"10\" cellspacing=\"0\" class=\"paragraph_block block-3\" role=\"presentation\" style=\"mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;\" width=\"100%\"> \n<tbody> \n<tr> \n<td class=\"pad\"> \n<div class=\"mktoText\" id=\"heroBody\" style=\"color:#101112;direction:ltr;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;letter-spacing:0px;line-height:150%;text-align:left;mso-line-height-alt:24px;\">\n<p style=\"margin: 0;\">Hi Bernatd,</p> \n<p>To continue to receive our latest updates via email, please confirm your email address.&nbsp;</p>\n</div> </td> \n</tr> \n<tr> \n<td class=\"pad\"> \n<div align=\"center\" class=\"alignment\"> \n<!--[if mso]>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<v:roundrect\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\txmlns:v=\"urn:schemas-microsoft-com:vml\"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\txmlns:w=\"urn:schemas-microsoft-com:office:word\" href=\"https://www.postman.com/\" style=\"height:42px;width:181px;v-text-anchor:middle;\" arcsize=\"8%\" stroke=\"false\" fillcolor=\"#fb6c37\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<w:anchorlock/>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<v:textbox inset=\"0px,0px,0px,0px\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<center style=\"color:#ffffff; font-family:Arial, sans-serif; font-size:16px\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<![endif]--> \n<a href=\n\"https://go.postman.com/MDY3LVVNRC05OTEAAAGan4_INlig2o7z2jmoPBwv_TAZd3QKPt6pEnLwbfuF0kFVfUxUXUyyCkuPAhPVyBHFIsClICY=\" style=\"text-decoration:none;display:inline-block;color:#ffffff;background-color:#fb6c37;border-radius:3px;width:auto;border-top:0px solid transparent;font-weight:400;border-right:0px solid transparent;border-bottom:0px solid transparent;border-left:0px solid transparent;padding-top:5px;padding-bottom:5px;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;text-align:center;mso-border-alt:none;word-break:keep-all;\" target=\"_blank\"\n> <span style=\"padding-left:20px;padding-right:20px;font-size:16px;display:inline-block;letter-spacing:normal;\"> <span style=\"word-break: break-word; line-height: 32px;\">Verify Email</span> </span> </a> \n<!--[if mso]>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</center>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</v:textbox>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</v:roundrect>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<![endif]--> \n</div></td> \n</tr> \n<tr> \n<td class=\"pad\"> \n<div class=\"mktoText\" id=\"heroBody2\" style=\"color:#101112;direction:ltr;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;letter-spacing:0px;line-height:150%;text-align:left;mso-line-height-alt:24px;\">\n<p>If you no longer want to receive emails from Postman or received this email by mistake, please delete it. You will not be subscribed unless you click the confirmation link above.</p>\n</div> </td> \n</tr> \n</tbody> \n</table> </td> \n</tr> \n</tbody> \n</table> </td> \n</tr> \n</tbody> \n</table> \n<table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"row row-2\" role=\"presentation\" style=\"mso-table-lspace: 0pt; mso-table-rspace: 0pt;\" width=\"100%\"> \n<tbody> \n<tr> \n<td> \n<table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"row-content stack\" role=\"presentation\" style=\"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-radius: 0; color: #000; width: 600px; margin: 0 auto;\" width=\"600\"> \n<tbody> \n<tr> \n<td class=\"column column-1\" style=\"mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 40px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;\" width=\"100%\"> \n<table border=\"0\" cellpadding=\"10\" cellspacing=\"0\" class=\"paragraph_block block-1\" role=\"presentation\" style=\"mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;\" width=\"100%\"> \n<tbody> \n<tr> \n<td class=\"pad\"> \n<div style=\"color:#101112;direction:ltr;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:13px;font-weight:400;letter-spacing:0px;line-height:120%;text-align:center;mso-line-height-alt:15.6px;\"> \n<p style=\"margin: 0;\"> <strong>FOLLOW US</strong> </p> \n</div> </td> \n</tr> \n</tbody> \n</table> \n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"social_block block-2\" role=\"presentation\" style=\"mso-table-lspace: 0pt; mso-table-rspace: 0pt;\" width=\"100%\"> \n<tbody> \n<tr> \n<td class=\"pad\" style=\"padding-bottom:10px;padding-left:10px;padding-right:10px;padding-top:5px;text-align:center;\"> \n<div align=\"center\" class=\"alignment\"> \n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"social-table\" role=\"presentation\" style=\"mso-table-lspace: 0pt; mso-table-rspace: 0pt; display: inline-block;\" width=\"260px\"> \n<tbody> \n<tr> \n<td style=\"padding:0 10px 0 10px;\"> <a href=\n\"https://go.postman.com/MDY3LVVNRC05OTEAAAGan4_INr0vNrQtc7Ph0PUPA2IOP5_CYL9nKfXILUlFEXVgarXUgZbfWpjDl0mkQVUfpXo_P0k=\" target=\"_blank\"\n> <img alt=\"Twitter\" height=\"32\" src=\"https://lp.postman.com/rs/067-UMD-991/images/twitter2x.png\" style=\"display: block; height: auto; border: 0;\" title=\"twitter\" width=\"32\" /> </a> </td> \n<td style=\"padding:0 10px 0 10px;\"> <a href=\n\"https://go.postman.com/MDY3LVVNRC05OTEAAAGan4_INpN1UJMqpKfbBYQzJ8iR5BkFskaFd1L8vU3D8zxgEPurQ39m87d5wiokKYiDdOc3un0=\" target=\"_blank\"\n> <img alt=\"Linkedin\" height=\"32\" src=\"https://lp.postman.com/rs/067-UMD-991/images/linkedin2x.png\" style=\"display: block; height: auto; border: 0;\" title=\"linkedin\" width=\"32\" /> </a> </td> \n<td style=\"padding:0 10px 0 10px;\"> <a href=\n\"https://go.postman.com/MDY3LVVNRC05OTEAAAGan4_INn-FhdIswsvvqnnLY5dCCV9ihkXdGesZfnAgmcQLYEg8QD9uMqADyUcNToFnLeobm1Y=\" target=\"_blank\"\n> <img alt=\"Postman Github\" height=\"22\" src=\"https://lp.postman.com/rs/067-UMD-991/images/github-logo.png\" style=\"display: block; height: auto; border: 0;\" title=\"Github\" width=\"22\" /> </a> </td> \n<td style=\"padding:0 10px 0 10px;\"> <a href=\n\"https://go.postman.com/MDY3LVVNRC05OTEAAAGan4_INsFJvRO22eKePc4PKgHPxxIP972A_Fuqw9GX03bTJ6Sy8v2uro8axaeGnJ-PkfbqY-U=\" target=\"_blank\"\n> <img alt=\"YouTube\" height=\"32\" src=\"https://lp.postman.com/rs/067-UMD-991/images/youtube2x.png\" style=\"display: block; height: auto; border: 0;\" title=\"YouTube\" width=\"32\" /> </a> </td> \n<td style=\"padding:0 10px 0 10px;\"> <a href=\n\"https://go.postman.com/MDY3LVVNRC05OTEAAAGan4_INndsLANVUrz3nm-RYeOQ6l6jhZHedEOHi30OCmARqNrDFGYjssCrc6RTsn285sDvNGA=\" target=\"_blank\"\n> <img alt=\"Custom\" height=\"22\" src=\"https://lp.postman.com/rs/067-UMD-991/images/email-icon-twtch.png\" style=\"display: block; height: auto; border: 0;\" title=\"Custom\" width=\"22\" /> </a> </td> \n</tr> \n</tbody> \n</table> \n</div> </td> \n</tr> \n</tbody> \n</table> \n<table border=\"0\" cellpadding=\"10\" cellspacing=\"0\" class=\"paragraph_block block-3\" role=\"presentation\" style=\"mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;\" width=\"100%\"> \n<tbody> \n<tr> \n<td class=\"pad\"> \n<div style=\"color:#101112;direction:ltr;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;letter-spacing:0px;line-height:120%;text-align:center;mso-line-height-alt:14.399999999999999px;\"> \n<p style=\"margin: 0; margin-bottom: 8px;\"> <a href=\"https://go.postman.com/v/MDY3LVVNRC05OTEAAAGan4_INr3k4zqXt4A1psP-lHh7-Tsr6_4sNUmE2188fLkAQtLcP-r8825h_ghrC9RxEQqd0uU=\" rel=\"noopener\" style=\"text-decoration: none; color: #fb6c37;\" target=\"_blank\">View in Browser</a> </p> \n<p style=\"margin: 0; margin-bottom: 8px;\"> <a href=\n\"https://go.postman.com/MDY3LVVNRC05OTEAAAGan4_INr07ux5mJYrStyYHmCREpeLYipQJGKpf9tARVBq7eT7mKxAwSBbq-eiO856iikbgv9g=\" rel=\"noopener\" style=\"text-decoration: none; color: #fb6c37;\" target=\"_blank\"\n>Email Preferences</a> </p> \n<p style=\"margin: 0; margin-bottom: 8px;\"> <a href=\n\"https://go.postman.com/MDY3LVVNRC05OTEAAAGan4_INrILwRXbIYA9K3gXpkHXNhZMxIfA4lfB_QNNWI4juKthl91EH5MS45Nk8rY4gQJLleY=\" rel=\"noopener\" style=\"text-decoration: none; color: #fb6c37;\" target=\"_blank\"\n>Unsubscribe</a> </p> \n<p style=\"margin: 0;\"> <a href=\n\"https://go.postman.com/MDY3LVVNRC05OTEAAAGan4_INkCYOleZ3Y9H6pXdkb_D2VAxYfuigfoOzEo1d7h4kPJcVGmTb9AfYLA8EJoE8af6V-A=\" rel=\"noopener\" style=\"text-decoration: none; color: #fb6c37;\" target=\"_blank\"\n>Privacy Policy</a> </p> \n</div> </td> \n</tr> \n</tbody> \n</table> \n<table border=\"0\" cellpadding=\"10\" cellspacing=\"0\" class=\"paragraph_block block-4\" role=\"presentation\" style=\"mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;\" width=\"100%\"> \n<tbody> \n<tr> \n<td class=\"pad\"> \n<div style=\"color:#101112;direction:ltr;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;letter-spacing:0px;line-height:120%;text-align:center;mso-line-height-alt:13.2px;\"> \n<p style=\"margin: 0;\">201 Mission Street Suite 2375 San Francisco, CA 94105</p> \n</div> </td> \n</tr> \n</tbody> \n</table> </td> \n</tr> \n</tbody> \n</table> </td> \n</tr> \n</tbody> \n</table> \n<table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"row row-3\" role=\"presentation\" style=\"mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff;\" width=\"100%\"> \n<tbody> \n<tr> \n<td></td> \n</tr> \n</tbody> \n</table> </td> \n</tr> \n</tbody> \n</table> \n<!-- End -->  \n<a href=\n\"https://go.postman.com/MDY3LVVNRC05OTEAAAGan4_INg3OeA5tlEDzSL8c-q7Ba68CBj9z8Vp4yLhf2cLeFSwWPbInrUZxgUIjx3pz_a4x6LU=\"\n></a>\n<img src=\"https://go.postman.com/trk?t=1&mid=MDY3LVVNRC05OTEAAAGan4_IN76pBHIGo-Vhz5CvRIJ7HMWaDqXe8OaTNN6oI4lEuXMW-GYyPIPjlKK_GCmFntS5eknmlE-QY4qUgmncNCmEGb1e4G8_LR9pxxFlZR0Oe2EFmZqW_Q\" width=\"1\" height=\"1\" style=\"display:none !important;\" alt=\"\" />\n\n<!--This is a comment -->\n</body>\n</html>",
+  "text": "Hi Bernatd, \n\nTo continue to receive our latest updates via email, please confirm your email address. \nIf you no longer want to receive emails from Postman or received this email by mistake, please delete it. You will not be subscribed unless you click the confirmation link above.\n\n-\n",
+  "textAsHtml": "<p>Hi Bernatd,</p><p>To continue to receive our latest updates via email, please confirm your email address.&nbsp;<br/>If you no longer want to receive emails from Postman or received this email by mistake, please delete it. You will not be subscribed unless you click the confirmation link above.</p><p>-</p>",
+  "subject": "Stay Connected to Postman",
+  "date": "2025-05-24T04:39:51.000Z",
+  "to": {
+    "value": [
+      {
+        "address": "bernatdsitumeang077@gmail.com",
+        "name": ""
+      }
+    ],
+    "html": "<span class=\"mp_address_group\"><a href=\"mailto:bernatdsitumeang077@gmail.com\" class=\"mp_address_email\">bernatdsitumeang077@gmail.com</a></span>",
+    "text": "bernatdsitumeang077@gmail.com"
+  },
+  "from": {
+    "value": [
+      {
+        "address": "marketing@postman.com",
+        "name": "The Postman Team"
+      }
+    ],
+    "html": "<span class=\"mp_address_group\"><span class=\"mp_address_name\">The Postman Team</span> &lt;<a href=\"mailto:marketing@postman.com\" class=\"mp_address_email\">marketing@postman.com</a>&gt;</span>",
+    "text": "\"The Postman Team\" <marketing@postman.com>"
+  },
+  "messageId": "<1199101787.27900.1748061591612@sjmktmail-trigger1f.marketo.org>",
+  "replyTo": {
+    "value": [
+      {
+        "address": "marketing@postman.com",
+        "name": ""
+      }
+    ],
+    "html": "<span class=\"mp_address_group\"><a href=\"mailto:marketing@postman.com\" class=\"mp_address_email\">marketing@postman.com</a></span>",
+    "text": "marketing@postman.com"
+  }
+}

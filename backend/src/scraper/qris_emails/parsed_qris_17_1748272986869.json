@@ -1,0 +1,128 @@
+{
+  "attachments": [],
+  "headers": {},
+  "headerLines": [
+    {
+      "key": "delivered-to",
+      "line": "Delivered-To: bernatdsitumeang077@gmail.com"
+    },
+    {
+      "key": "received",
+      "line": "Received: by 2002:a05:7300:e12f:b0:172:3dc2:f9d0 with SMTP id hd47csp245486dyb;\r\n        Fri, 23 May 2025 22:58:18 -0700 (PDT)"
+    },
+    {
+      "key": "x-received",
+      "line": "X-Received: by 2002:a50:a416:0:b0:602:ef0a:c4f0 with SMTP id 4fb4d7f45d1cf-602ef0ad306mr263294a12.7.1748066298651;\r\n        Fri, 23 May 2025 22:58:18 -0700 (PDT)"
+    },
+    {
+      "key": "arc-seal",
+      "line": "ARC-Seal: i=1; a=rsa-sha256; t=1748066298; cv=none;\r\n        d=google.com; s=arc-20240605;\r\n        b=Y/txxP6qmiUTOskMJaA/JBZgeLy6HJBY4KBxB7lK4PxLXyr3+KUVMwcDkIIBd2uuaJ\r\n         S9VJaSpKtH1wnvBHlSPh0aarPE2N7hhodt86mHPT81CT4zu0NBTguNS/myQeHWLqQ9XK\r\n         lfLwCIB/tMCiOLJFAQvqSsMJCGjJ8noX+NYZY3GIhYObucUsV1qwsqSu4U1NUPqcRw/L\r\n         YrlObzmmcdPd+rSvuEJlMglalrN7vvCMYy2ob4yvSt0aUowIT37Ie4QN9NStgo0jTU93\r\n         ftQulrM7Ko4iU94crywHVTUu1YccQ36848veUbjwBZ0JyxO5ffRLEWJCYFt2n45TuCYA\r\n         yjcA=="
+    },
+    {
+      "key": "arc-message-signature",
+      "line": "ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;\r\n        h=to:subject:message-id:date:from:mime-version:dkim-signature;\r\n        bh=8uFXVfUVwpkq9B6zxtPQ2m/jPFZPpVmRP2GVzjwwb14=;\r\n        fh=IlZIoqWdUvKyK4AClkXBlX+WRlTLJi8OEzCeedV5Y/M=;\r\n        b=S5IrgF8PGaAZJi7Ubk2Pj7VfDtd1UEVgV6+J5JKzzY0mulPo3ZZNP+py3choCLavIZ\r\n         xmnX580bdhcAnVxyl4aY00UgxrKHLPp48ZGP4yZl2GP0j5bR2IJqM0GW4+TELcGUTvmd\r\n         oPnFLiim7V3llDpsoU5vFlE5aXkworrEuBfzI+Ybv8nxU4BUiNnb4QxpiAmllYWq4M0u\r\n         74kIPbrnqQCExNiH0vXjFtu8CCS352KXiU05p9h9ZvZGb6e80EwMWpQ5/nQfjqSjPHKN\r\n         rlKb5VGU/1rn/kmtp1QfpNOh2TSRY7wCCRA9KiCch6Hxiqd8/JJC9t6XHCdqCZLBVhnh\r\n         idqA==;\r\n        dara=google.com"
+    },
+    {
+      "key": "arc-authentication-results",
+      "line": "ARC-Authentication-Results: i=1; mx.google.com;\r\n       dkim=pass header.i=@gmail.com header.s=20230601 header.b=Cga0L0L5;\r\n       spf=pass (google.com: domain of bernadbernadajja@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=bernadbernadajja@gmail.com;\r\n       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;\r\n       dara=pass header.i=@gmail.com"
+    },
+    {
+      "key": "return-path",
+      "line": "Return-Path: <bernadbernadajja@gmail.com>"
+    },
+    {
+      "key": "received",
+      "line": "Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])\r\n        by mx.google.com with SMTPS id 4fb4d7f45d1cf-60292e638a8sor1264107a12.4.2025.05.23.22.58.18\r\n        for <bernatdsitumeang077@gmail.com>\r\n        (Google Transport Security);\r\n        Fri, 23 May 2025 22:58:18 -0700 (PDT)"
+    },
+    {
+      "key": "received-spf",
+      "line": "Received-SPF: pass (google.com: domain of bernadbernadajja@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;"
+    },
+    {
+      "key": "authentication-results",
+      "line": "Authentication-Results: mx.google.com;\r\n       dkim=pass header.i=@gmail.com header.s=20230601 header.b=Cga0L0L5;\r\n       spf=pass (google.com: domain of bernadbernadajja@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=bernadbernadajja@gmail.com;\r\n       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;\r\n       dara=pass header.i=@gmail.com"
+    },
+    {
+      "key": "dkim-signature",
+      "line": "DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=gmail.com; s=20230601; t=1748066298; x=1748671098; dara=google.com;\r\n        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject\r\n         :date:message-id:reply-to;\r\n        bh=8uFXVfUVwpkq9B6zxtPQ2m/jPFZPpVmRP2GVzjwwb14=;\r\n        b=Cga0L0L5TdXi8F4OAuTGnTrAsXs9JjpY6WAF20olEd6lgBvq6N2htzBPyzK1hCB9YK\r\n         6YcAT9RPeQZCtGmbbj8/PqTRcY9OU8RIRnN/xoG05Cl0LFGvnYcwn1FRKYI964DKCKr3\r\n         88XE/isZP+jT7/ttzE+eD/oqAOeCzk1fy/tJ1OkcmKr+IAr2n6KxY9wa9RoUSXadq7v8\r\n         nZ2/9WQcd8ZGP/qtHFZMho9XgN+h8+j+rBdQ7MopmwQv2dKaz7SNaAbrtAQiS/zEpZ/M\r\n         iSrFjTVKJqUZspnw04H/Wc4h82Nmz9Jml8SeHTt/ZomwqpJKuAjbMrMifYc6bPfPTCkQ\r\n         C0PQ=="
+    },
+    {
+      "key": "x-google-dkim-signature",
+      "line": "X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=1e100.net; s=20230601; t=1748066298; x=1748671098;\r\n        h=to:subject:message-id:date:from:mime-version:x-gm-message-state\r\n         :from:to:cc:subject:date:message-id:reply-to;\r\n        bh=8uFXVfUVwpkq9B6zxtPQ2m/jPFZPpVmRP2GVzjwwb14=;\r\n        b=ZqebDZBksHFl521Krjbu3jAxjhk1GZJ5bssCRAlIvNJEHVHrIVxB0ZvQvePPO8D/us\r\n         ZGOmy2iJc+8IMjdnUQJacUvUwRMfagRAy2vOrI5APX4zkYZGdiJGXy/Rs/2IE0Ckx0HD\r\n         +5trElt6ZgNBGAEA3t0RGCIpTsQUzgTPhY80rOwe0tDlylft5yt5F+/rrKA1IpRB9rPd\r\n         95oZxwPiaLxtpbr19nLhIiEcEcZ9cELHS9LeRIYzSuLUoWahgGCcxVt/w85BqDlnNtBm\r\n         76889X9TUY0S6EIA2bN52QTwawfnI/zyyz3wWpLn/3lNFbKeIKLVywUeNcj5ledZJ7mG\r\n         4/Tg=="
+    },
+    {
+      "key": "x-gm-message-state",
+      "line": "X-Gm-Message-State: AOJu0YzONM0u/EmT3ZIHpmubGHVay3wPmptR7nl9QmgQXdqyJMoYxyZi\r\n\tFOedx65jHlWbiPmpiz+tJdWBV2mql+vBBaWNxofd/unXmQLjFjuTQW2Z5TsVpIEytZZQTQO0QVi\r\n\ttCTByesAeoEnPGPFvvHin/QzEYYnVLQlx8w=="
+    },
+    {
+      "key": "x-gm-gg",
+      "line": "X-Gm-Gg: ASbGnctA4olgo3nujctwZednhmP5PDi36IluWyeTlIpSIPuCLEMNTVJfkrBuB4T8YXV\r\n\tIn145QKBQZSABcf+3FiBG7ahJRhonRPZPABw4AT+ow+DyEAXl7eFsuEdgPamRzqQFL/2W7ZObiI\r\n\tTeMnB7noFDIS1/mqb8gJu5EUgrBGjtQzyB"
+    },
+    {
+      "key": "x-google-smtp-source",
+      "line": "X-Google-Smtp-Source: AGHT+IG9qViMQhhxKAdoVYkhhd5E8rOutfT/8f7chjm+YevIj5WuxGjV3Xi6JfFgsnKQEs+EeoqBRc2ZbNc2WO1xw0c="
+    },
+    {
+      "key": "x-received",
+      "line": "X-Received: by 2002:a17:907:f509:b0:ad5:2e15:2a7b with SMTP id\r\n a640c23a62f3a-ad63f97fec8mr661795966b.2.1748066297794; Fri, 23 May 2025\r\n 22:58:17 -0700 (PDT)"
+    },
+    {
+      "key": "mime-version",
+      "line": "MIME-Version: 1.0"
+    },
+    {
+      "key": "from",
+      "line": "From: Bernad Bernadajja <bernadbernadajja@gmail.com>"
+    },
+    {
+      "key": "date",
+      "line": "Date: Sat, 24 May 2025 12:58:06 +0700"
+    },
+    {
+      "key": "x-gm-features",
+      "line": "X-Gm-Features: AX0GCFskPsUVRgZlB-rx1cU-P0kGWR_-X1T44uLWxmMka6CazM_8meDmeYUaZ7Q"
+    },
+    {
+      "key": "message-id",
+      "line": "Message-ID: <CABxNLW+t0euO2SfYurzADLi0Ucv02fvxs_5Ki1QeiCcq7OFAMA@mail.gmail.com>"
+    },
+    {
+      "key": "subject",
+      "line": "Subject: Pembayaran QRIS Starbucks"
+    },
+    {
+      "key": "to",
+      "line": "To: \"bernatdsitumeang077@gmail.com\" <bernatdsitumeang077@gmail.com>"
+    },
+    {
+      "key": "content-type",
+      "line": "Content-Type: multipart/alternative; boundary=\"000000000000b954890635db666f\""
+    }
+  ],
+  "html": "<div dir=\"auto\">Anda membayar Rp50.000 via QRIS di starbucks.</div>\n",
+  "text": "Anda membayar Rp50.000 via QRIS di starbucks.\n",
+  "textAsHtml": "<p>Anda membayar Rp50.000 via QRIS di starbucks.</p>",
+  "subject": "Pembayaran QRIS Starbucks",
+  "date": "2025-05-24T05:58:06.000Z",
+  "to": {
+    "value": [
+      {
+        "address": "bernatdsitumeang077@gmail.com",
+        "name": ""
+      }
+    ],
+    "html": "<span class=\"mp_address_group\"><a href=\"mailto:bernatdsitumeang077@gmail.com\" class=\"mp_address_email\">bernatdsitumeang077@gmail.com</a></span>",
+    "text": "bernatdsitumeang077@gmail.com"
+  },
+  "from": {
+    "value": [
+      {
+        "address": "bernadbernadajja@gmail.com",
+        "name": "Bernad Bernadajja"
+      }
+    ],
+    "html": "<span class=\"mp_address_group\"><span class=\"mp_address_name\">Bernad Bernadajja</span> &lt;<a href=\"mailto:bernadbernadajja@gmail.com\" class=\"mp_address_email\">bernadbernadajja@gmail.com</a>&gt;</span>",
+    "text": "\"Bernad Bernadajja\" <bernadbernadajja@gmail.com>"
+  },
+  "messageId": "<CABxNLW+t0euO2SfYurzADLi0Ucv02fvxs_5Ki1QeiCcq7OFAMA@mail.gmail.com>"
+}

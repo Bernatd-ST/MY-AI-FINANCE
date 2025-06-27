@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "970a04bc-d67d-41e1-bb28-46a964992d0f",
+		"name": "MY-ASSISTANT-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45264701",
+		"_collection_link": "https://bernatd.postman.co/workspace/Bernatd's-Workspace~8788a20a-e4e6-4fa9-8ff5-4ee5f8d04eac/collection/45264701-970a04bc-d67d-41e1-bb28-46a964992d0f?action=share&source=collection_link&creator=45264701"
+	},
+	"item": [
+		{
+			"name": "GET MONTH REPORT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/transactions/summary?month=2025-06",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"transactions",
+						"summary"
+					],
+					"query": [
+						{
+							"key": "month",
+							"value": "2025-06"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST MAIL",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/transactions/fetch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"transactions",
+						"fetch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL DATA EMAIL",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/transactions/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"transactions",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

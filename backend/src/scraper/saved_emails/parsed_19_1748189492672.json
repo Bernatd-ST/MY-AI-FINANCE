@@ -1,0 +1,128 @@
+{
+  "attachments": [],
+  "headers": {},
+  "headerLines": [
+    {
+      "key": "delivered-to",
+      "line": "Delivered-To: bernatdsitumeang077@gmail.com"
+    },
+    {
+      "key": "received",
+      "line": "Received: by 2002:a05:7300:e12f:b0:172:3dc2:f9d0 with SMTP id hd47csp245824dyb;\r\n        Fri, 23 May 2025 22:59:48 -0700 (PDT)"
+    },
+    {
+      "key": "x-received",
+      "line": "X-Received: by 2002:a05:6402:1d4b:b0:600:a6a9:bf9c with SMTP id 4fb4d7f45d1cf-602d7eb902emr614384a12.0.1748066387799;\r\n        Fri, 23 May 2025 22:59:47 -0700 (PDT)"
+    },
+    {
+      "key": "arc-seal",
+      "line": "ARC-Seal: i=1; a=rsa-sha256; t=1748066387; cv=none;\r\n        d=google.com; s=arc-20240605;\r\n        b=gSnOXyfiYulZ96QnJXhqCW48cVPQUjNY8vV07TATeFIGPLix9pPO+Z3GUBIVFrlJf5\r\n         e9HwH2jtN5+O+yuJ5QTWO678hSapFffRPmruvTmZRi9FTvU43NE6ruTrs1ZxeSLVEfvF\r\n         Sr1raJBbDL352bkfUjgiQiOdfZKd2DUG9fmAGlyFy8g+C32PT1DqxY8IBsWNXrrlQf2O\r\n         72icqL3EYMlFSMMaP7Hf2fUjqzCF76tScaCPCG5jn23JHYLIz9T8dAP72SoAxrLLkurh\r\n         5zfwmaIMofnqIZ3MNMidXiKWNmZPySqeo7Up/qeSd37Z3z7m3wfpgl9OBpOen1QcXlgy\r\n         MXwg=="
+    },
+    {
+      "key": "arc-message-signature",
+      "line": "ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;\r\n        h=to:subject:message-id:date:from:mime-version:dkim-signature;\r\n        bh=kP/9d5ndaLvhm87hRkYCmRSnDjC3cdD9d50219gBRMg=;\r\n        fh=IlZIoqWdUvKyK4AClkXBlX+WRlTLJi8OEzCeedV5Y/M=;\r\n        b=AV/TDor8Be8v/2DoJtxa8iwq9bOhKK+Qh1vv8ay8ZUnpEKVJdPaBTZResE4HlQnAYI\r\n         2+4Z9bRovOunyHCiCjXgZPAP9a7xvhRuGpyS8Y3MdvN6ycStn/Q81XfaYIUHP7aPr/BD\r\n         XECbUv5jbS2oYdIby9xYMRfgm88/jnlESkGIiwH0NO4BXTRu5v2AhZewLT+43igsK5Kh\r\n         q6xdOmhvty2MZg8YdkyS0WIX6eIXFUn/RCXsHSU2zwaFBGgDjeg2Rasmx9mvvv05GL/Q\r\n         ZWugTgzXs22yuXjZ99HVJHvOUJxBuCGH/zA29jXLlakJo0FSf8sQUtMnP5bOLzOeDg67\r\n         xQlg==;\r\n        dara=google.com"
+    },
+    {
+      "key": "arc-authentication-results",
+      "line": "ARC-Authentication-Results: i=1; mx.google.com;\r\n       dkim=pass header.i=@gmail.com header.s=20230601 header.b=DBll2EuB;\r\n       spf=pass (google.com: domain of bernadbernadajja@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=bernadbernadajja@gmail.com;\r\n       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;\r\n       dara=pass header.i=@gmail.com"
+    },
+    {
+      "key": "return-path",
+      "line": "Return-Path: <bernadbernadajja@gmail.com>"
+    },
+    {
+      "key": "received",
+      "line": "Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])\r\n        by mx.google.com with SMTPS id a640c23a62f3a-ad52d06adffsor1063418166b.7.2025.05.23.22.59.47\r\n        for <bernatdsitumeang077@gmail.com>\r\n        (Google Transport Security);\r\n        Fri, 23 May 2025 22:59:47 -0700 (PDT)"
+    },
+    {
+      "key": "received-spf",
+      "line": "Received-SPF: pass (google.com: domain of bernadbernadajja@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;"
+    },
+    {
+      "key": "authentication-results",
+      "line": "Authentication-Results: mx.google.com;\r\n       dkim=pass header.i=@gmail.com header.s=20230601 header.b=DBll2EuB;\r\n       spf=pass (google.com: domain of bernadbernadajja@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=bernadbernadajja@gmail.com;\r\n       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;\r\n       dara=pass header.i=@gmail.com"
+    },
+    {
+      "key": "dkim-signature",
+      "line": "DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=gmail.com; s=20230601; t=1748066387; x=1748671187; dara=google.com;\r\n        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject\r\n         :date:message-id:reply-to;\r\n        bh=kP/9d5ndaLvhm87hRkYCmRSnDjC3cdD9d50219gBRMg=;\r\n        b=DBll2EuBAhLYPbu/fwm5vl322UoULrn+n25CSlz3+ceAmo/8qBzC1Y/vHqgnt1dlds\r\n         /ajhpbNvQbPnT8QTF3eJeLRszE6dLR4UUJNjKnxB3eVNxhwygCbWmLOJQp5QTv6YvByG\r\n         lCbGeOcPc5XvI52+SZzH0XrwT9vCEw1cBaXSLaKZ2vIv7zim/UFmABa8sTwzrCAQl0Qa\r\n         BX+uvC076UR0fQC/2lGc1XJWHBRkAC6ytabWZavvpl0WYpbIcVF8arPXESEXYIHovJ1I\r\n         cqoNESdK/kF5ypR1uuMj03Wzoc5BiCAriRYdYYLtm0JWX7GJEjNVmZCspeSE5Bw+m1GK\r\n         Ehkg=="
+    },
+    {
+      "key": "x-google-dkim-signature",
+      "line": "X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=1e100.net; s=20230601; t=1748066387; x=1748671187;\r\n        h=to:subject:message-id:date:from:mime-version:x-gm-message-state\r\n         :from:to:cc:subject:date:message-id:reply-to;\r\n        bh=kP/9d5ndaLvhm87hRkYCmRSnDjC3cdD9d50219gBRMg=;\r\n        b=v0bb8ZMRRFzNzruqOjYPUZ4Om1oC/kf03PQmSGEBGyYAuxwKmWpszd5S3DSIPnLWCN\r\n         Z8r2v6fmjIodK4LxrtmDkeHGtxnno99OVtGzHv5U+lJTl00pj64Bl+z/QSVK6I+Rapv1\r\n         2wMAP2sSZpWvjFUBzUg2xzuNmkOP+CQqhfg1pe0eVQWAtjTllnmNGNSe8AycjlvuuOc1\r\n         H7ZSl73PkZpuqDFNnOppWjiQovmSS7V2WPnooCeGk+UIbAy0jcfowofn1hE/uML4bjQl\r\n         yywuPCe6XYke8qWowLjknRofbCfNW2YOGPx54NwVWf9YzUUwil02gqoCbmGj1ftsy73F\r\n         SLqw=="
+    },
+    {
+      "key": "x-gm-message-state",
+      "line": "X-Gm-Message-State: AOJu0Yxg9EIaI0RATkVZzMakKwLkHFlNkLw3Yv5s7DCQ3cqN6wDgks4A\r\n\txKt8/sc0KNwvPO4m8ktG/vw0jHiJ08GAO9hFs66jG1K703fhyFjtWBPuTKsENuqkh0fTyko6/Q6\r\n\txoMNk38EEc3zrlFFdszW1YN2oPBqCR9H1xw=="
+    },
+    {
+      "key": "x-gm-gg",
+      "line": "X-Gm-Gg: ASbGncvpsvXATi74EQKoM8YxyMDM1jz2Yq65+/WacHFN+A1fMNS3hZGbP25MFNfAjX3\r\n\tmcjmjG2zHXWD2Aphv7CXtY7ObhnHXviIMxoTxmamt6/AeNit+tYGH2Kw3Zxsn5ZviB1QCp4SKsa\r\n\tc8ONJmArcsxCkhns5anLB/dDgRGgTTWD8E"
+    },
+    {
+      "key": "x-google-smtp-source",
+      "line": "X-Google-Smtp-Source: AGHT+IGwBjwb3kjEvHwUU5RuT8Jnfh24C7+D5lpTEDvr5nL4UeMNvyEaNFe+f+n0jAH1fIK2eQZDL+rtu7pKhcS3qmY="
+    },
+    {
+      "key": "x-received",
+      "line": "X-Received: by 2002:a17:907:96a8:b0:ad2:dff:59f9 with SMTP id\r\n a640c23a62f3a-ad85b1858c4mr147729266b.40.1748066386577; Fri, 23 May 2025\r\n 22:59:46 -0700 (PDT)"
+    },
+    {
+      "key": "mime-version",
+      "line": "MIME-Version: 1.0"
+    },
+    {
+      "key": "from",
+      "line": "From: Bernad Bernadajja <bernadbernadajja@gmail.com>"
+    },
+    {
+      "key": "date",
+      "line": "Date: Sat, 24 May 2025 12:59:35 +0700"
+    },
+    {
+      "key": "x-gm-features",
+      "line": "X-Gm-Features: AX0GCFttqK8r8HwlSv3QSa818K2kRrkGU0jAEOCSUxq4YVW_SU0jx5AbTMXtIYc"
+    },
+    {
+      "key": "message-id",
+      "line": "Message-ID: <CABxNLWKrVpTj7CKz-_RW=226RzUivSVw--U=nJEGOsnjuXnorg@mail.gmail.com>"
+    },
+    {
+      "key": "subject",
+      "line": "Subject: TEST"
+    },
+    {
+      "key": "to",
+      "line": "To: \"bernatdsitumeang077@gmail.com\" <bernatdsitumeang077@gmail.com>"
+    },
+    {
+      "key": "content-type",
+      "line": "Content-Type: multipart/alternative; boundary=\"000000000000040dfa0635db6c66\""
+    }
+  ],
+  "html": "<div dir=\"auto\">QRIS Payment: Rp100.000 di McDonald&#39;s.</div>\n",
+  "text": "QRIS Payment: Rp100.000 di McDonald's.\n",
+  "textAsHtml": "<p>QRIS Payment: Rp100.000 di McDonald&apos;s.</p>",
+  "subject": "TEST",
+  "date": "2025-05-24T05:59:35.000Z",
+  "to": {
+    "value": [
+      {
+        "address": "bernatdsitumeang077@gmail.com",
+        "name": ""
+      }
+    ],
+    "html": "<span class=\"mp_address_group\"><a href=\"mailto:bernatdsitumeang077@gmail.com\" class=\"mp_address_email\">bernatdsitumeang077@gmail.com</a></span>",
+    "text": "bernatdsitumeang077@gmail.com"
+  },
+  "from": {
+    "value": [
+      {
+        "address": "bernadbernadajja@gmail.com",
+        "name": "Bernad Bernadajja"
+      }
+    ],
+    "html": "<span class=\"mp_address_group\"><span class=\"mp_address_name\">Bernad Bernadajja</span> &lt;<a href=\"mailto:bernadbernadajja@gmail.com\" class=\"mp_address_email\">bernadbernadajja@gmail.com</a>&gt;</span>",
+    "text": "\"Bernad Bernadajja\" <bernadbernadajja@gmail.com>"
+  },
+  "messageId": "<CABxNLWKrVpTj7CKz-_RW=226RzUivSVw--U=nJEGOsnjuXnorg@mail.gmail.com>"
+}
