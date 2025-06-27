@@ -98,4 +98,4 @@ Selain fitur notifikasi batas transaksi berbasis aturan, proyek ini dirancang un
 
 ## 📄 Lisensi
 
-Proyek ini dilisensikan di bawah Lisensi MIT.
+Proyek ini dilisensikan oleh Bernatd ST.
