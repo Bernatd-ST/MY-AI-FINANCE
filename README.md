@@ -1,6 +1,5 @@
-=========================================================
-EMAIL QRIS SCRAPER & TELEGRAM NOTIFIKASI - DOKUMENTASI
-=========================================================
+                                      EMAIL QRIS SCRAPER & TELEGRAM NOTIFIKASI - DOKUMENTASI 
+
 
 1. SETUP
 --------
